@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>upset.dev</title>
+  <link rel="shortcut icon" href="https://cdn.statically.io/img/upset.dev/w=32/img/black.png" type="image/icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap">
+  <link rel="stylesheet" href="https://cdn.statically.io/libs/font-awesome/5.13.1/css/all.min.css">
+  <style>
+    body {
+      font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+      margin: auto;
+      max-width: 800px;
+      padding: 24px;
+      color: #222;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+      transition-duration: .1s;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #000;
+    }
+
+    header {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    header nav {
+      display: flex;
+      list-style: none;
+    }
+
+    header nav li a {
+      padding: 10px;
+    }
+
+    #whoami {
+      margin-top: 24px;
+      max-width: 700px;
+    }
+
+    #whoami a {
+      border-bottom: 2px solid #222;
+    }
+
+    .title {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+
+    .projects {
+      display: flex;
+    }
+
+    .projects+.projects {
+      margin-top: 20px;
+    }
+
+    .project {
+      border: 1px solid #eaeaea;
+      border-radius: 10px;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+      padding: 10px 20px 25px;
+      max-width: 250px;
+    }
+
+    .project:hover {
+      box-shadow: 0 20px 25px -6px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.1);
+    }
+
+    .project+.project {
+      margin-left: 10px;
+    }
+
+    .project .header {
+      align-items: center;
+      display: flex;
+    }
+
+    .project img {
+      border-radius: 50%;
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .project h3 {
+      display: inline;
+    }
+
+    .project p {
+      font-size: 16px;
+    }
+
+    .project small {
+      color: #ff3434;
+      background: linear-gradient(90deg,#e88b00,#ff1983);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    .project.comingsoon i {
+      font-size: 50px;
+    }
+
+    .client img {
+      max-width: 300px;
+    }
+
+    .tech i {
+      font-size: 50px;
+    }
+
+    .tech i+i {
+      margin-left: 10px;
+    }
+
+    footer {
+      align-items: baseline;
+      border-top: 2px solid #222;
+      display: flex;
+      margin-top: 100px;
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+
+    footer div {
+      width: 70%;
+    }
+
+    footer div:first-child {
+      padding-right: 20px;
+    }
+
+    footer div+div {
+      width: 30%;
+    }
+
+    footer li {
+      list-style: none;
+    }
+
+    footer li+li a {
+      display: block;
+      margin-top: 10px;
+    }
+
+    footer li i {
+      margin-right: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/">
+      <h1>upset.dev</h1>
+    </a>
+
+    <nav>
+      <li>
+        <a href="https://twitter.com/fransallen"><i class="fab fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="https://instagram.com/fransallen"><i class="fab fa-instagram"></i></a>
+      </li>
+      <li>
+        <a href="https://github.com/fransallen"><i class="fab fa-github"></i></a>
+      </li>
+    </nav>  
+  </header>
+
+  <main>
+    <div id="whoami">
+      <h2>Hey, I'm Frans!</h2>
+      <p>
+        I am a software developer in love with many programming languages. Most of my work is open source and publicly available on <a href="https://github.com/fransallen">GitHub</a>.
+      </p>
+
+      <p>Outside programming, I enjoy traveling, eating, and watching movies.</p>
+    </div>
+    
+    <div id="projects">
+      <h2 class="title">
+        <i class="fas fa-laptop-code"></i>
+        Projects/OSS
+      </h2>
+
+      <div class="projects">
+        <a class="project" href="https://statically.io">
+          <div class="header">
+            <img src="https://statically.io/images/branding/statically-mark.svg" alt="Statically">
+            <h3>Statically</h3>
+          </div>
+          <p>A free and public CDN for static assets in GitHub, GitLab, and Bitbucket.</p>
+          <small>Founded: 2018 | Estimated users: 10K</small>
+        </a>
+  
+        <a class="project" href="https://puredns.org">
+          <div class="header">
+            <img src="img/black.png" alt="PureDNS">
+            <h3>PureDNS</h3>
+          </div>
+          <p>Open-source DNS resolver made for modern needs complete with DoT & DoH support.</p>
+          <small>Founded: 2020 | Estimated users: 1K</small>
+        </a>
+
+        <a class="project" href="https://github.com/staticallyio/favicons">
+          <div class="header">
+            <img src="img/black.png" alt="">
+            <h3>Favicons</h3>
+          </div>
+          <p>Open-source PHP application to retrieve favicons from any domain.</p>
+          <small>Founded: 2018</small>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <h3>About this website</h3>
+      <p>Welcome to my personal website! This place is where I publish the projects I'm working on, most of them are open source.</p>
+    </div>
+
+    <div>
+      <li>
+        <a href="https://twitter.com/fransallen">
+          <i class="fab fa-twitter"></i> Follow me on Twitter
+        </a>
+      </li>
+
+      <li>
+        <a href="https://instagram.com/fransallen">
+          <i class="fab fa-instagram"></i> I do memes and photography
+        </a>
+      </li>
+
+      <li>
+        <a href="https://github.com/fransallen">
+          <i class="fab fa-github"></i> Contribute to code
+        </a>
+      </li>
+    </div>
+  </footer>
+</body>
+</html>
