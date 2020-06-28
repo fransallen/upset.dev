@@ -161,6 +161,28 @@
       margin-right: 5px;
     }
 
+    @media (max-width: 768px) {
+      .projects, .project, footer {
+        display: block;
+      }
+
+      .project {
+        margin: auto;
+      }
+
+      .project+.project {
+        margin-left: auto;
+        margin-top: 20px;
+      }
+
+      footer div {
+        width: 100%!important;
+      }
+      
+      footer div+div {
+        margin-top: 40px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -233,7 +255,7 @@
   <footer>
     <div>
       <h3>About this website</h3>
-      <p>Welcome to my personal website! This place is where I publish the projects I'm working on, most of them are open source.</p>
+      <p>Welcome to my personal website! This place is where I showcase the projects I'm working on, most of them are open source.</p>
     </div>
 
     <div>
