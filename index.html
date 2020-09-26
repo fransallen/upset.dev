@@ -4,14 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>upset.dev</title>
-  <link rel="shortcut icon" href="https://cdn.statically.io/img/upset.dev/w=32/img/black.png" type="image/icon">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap">
-  <link rel="stylesheet" href="https://cdn.statically.io/libs/font-awesome/5.13.1/css/all.min.css">
+  <link rel="shortcut icon" href="https://avatar.fly.dev/?type=svg&text=🙂" type="image/icon">
+  <link rel="stylesheet" href="https://cdn.statically.io/libs/font-awesome/5.13.1/css/brands.min.css">
   <style>
+    .fab {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-size: 1.2em;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+    }
+
+    .fa-github:before {
+      content: "\f09b";
+    }
+
+    .fa-twitter:before {
+      content: "\f099";
+    }
+
+    .fa-instagram:before {
+      content: "\f16d";
+    }
+
+    .fa-discourse:before {
+      content:"\f393";
+    }
+
     body {
-      font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       margin: auto;
-      max-width: 800px;
+      max-width: 920px;
       padding: 24px;
       color: #222;
     }
@@ -23,12 +49,16 @@
     }
 
     p {
-      font-size: 18px;
+      font-size: 19px;
       line-height: 1.5;
     }
 
     h1, h2, h3, h4, h5, h6 {
       color: #000;
+    }
+
+    h1 {
+      font-size: 2.5em;
     }
 
     header {
@@ -40,15 +70,16 @@
     header nav {
       display: flex;
       list-style: none;
+      margin-top: 0.63em;
     }
 
     header nav li a {
-      padding: 10px;
+      padding: 15px;
     }
 
     #whoami {
       margin-top: 24px;
-      max-width: 700px;
+      max-width: 800px;
     }
 
     #whoami a {
@@ -56,12 +87,27 @@
     }
 
     .title {
-      margin-top: 50px;
-      margin-bottom: 30px;
+      font-size: 1.7em;
+      margin-top: 2em;
+      margin-bottom: 1.8em;
+      text-align: center;
+    }
+
+    a.patreon {
+      background: #e53e3e;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      color: #fff;
+      margin-left: .5em;
+      padding: .5em;
     }
 
     .projects {
       display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      margin-top: -.5em;
+      margin-left: -.5em;
     }
 
     .projects+.projects {
@@ -71,17 +117,16 @@
     .project {
       border: 1px solid #eaeaea;
       border-radius: 10px;
-      box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      margin-top: .5em;
+      margin-left: .5em;
       padding: 10px 20px 25px;
-      max-width: 250px;
+      flex-grow: 1;
+      width: 25%;
     }
 
-    .project:hover {
-      box-shadow: 0 20px 25px -6px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.1);
-    }
-
-    .project+.project {
-      margin-left: 10px;
+    .project:hover, a.patreon:hover {
+      box-shadow: 0 20px 25px -6px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .1);
     }
 
     .project .header {
@@ -127,9 +172,70 @@
       margin-left: 10px;
     }
 
+    .sponsors-logo {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .sponsors-logo div {
+      padding: 1em;
+    }
+
+    .sponsors-logo img {
+      filter: grayscale(100%);
+      transition-duration: .3s;
+      height: 50px;
+      max-width: 11rem;
+    }
+
+    .sponsors-logo img:hover{
+      filter: grayscale(0);
+    }
+
+    .section {
+      margin-bottom: 5em;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .projects-inline {
+      margin-top: 3em;
+    }
+
+    .projects-inline h4 {
+      margin: 0;
+      margin-bottom: 5px;
+    }
+
+    .projects-inline a {
+      background: #fff;
+      border: 1px solid #eaeaea;
+      color: #333;
+      padding: 1em;
+      display: block;
+    }
+
+    .projects-inline a:hover {
+      background: #f9f9f9;
+    }
+
+    .projects-inline div:first-child a {
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+
+    .projects-inline div:last-child a {
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
     footer {
       align-items: baseline;
-      border-top: 2px solid #222;
+      border-top: 2px solid #666;
       display: flex;
       margin-top: 100px;
       padding-top: 50px;
@@ -141,7 +247,7 @@
     }
 
     footer div:first-child {
-      padding-right: 20px;
+      padding-right: 40px;
     }
 
     footer div+div {
@@ -162,6 +268,17 @@
     }
 
     @media (max-width: 768px) {
+      header {
+        display: block;
+        margin-bottom: 3em;
+        text-align: center;
+      }
+
+      header nav {
+        justify-content: center;
+        margin-top: 2em;
+      }
+
       .projects, .project, footer {
         display: block;
       }
@@ -196,27 +313,29 @@
         <a href="https://twitter.com/fransallen"><i class="fab fa-twitter"></i></a>
       </li>
       <li>
-        <a href="https://instagram.com/fransallen"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/fransallen/"><i class="fab fa-instagram"></i></a>
       </li>
       <li>
         <a href="https://github.com/fransallen"><i class="fab fa-github"></i></a>
+      </li>
+      <li>
+        <a class="patreon" href="https://www.patreon.com/fransallen">Become A Patron</a>
       </li>
     </nav>  
   </header>
 
   <main>
     <div id="whoami">
-      <h2>Hey, I'm Frans!</h2>
+      <h2>Hey, I'm Frans Allen!</h2>
       <p>
-        I am a software developer in love with many programming languages. Most of my work is open source and publicly available on <a href="https://github.com/fransallen">GitHub</a>.
+        I am an independent software developer in love with many programming languages. Most of my work is open source and publicly available on <a href="https://github.com/fransallen">GitHub</a>.
       </p>
 
       <p>Outside programming, I enjoy traveling, eating, and watching movies.</p>
     </div>
     
-    <div id="projects">
+    <div id="projects" class="section">
       <h2 class="title">
-        <i class="fas fa-laptop-code"></i>
         Projects/OSS
       </h2>
 
@@ -226,29 +345,85 @@
             <img src="https://cdn.statically.io/img/statically.io/w=40/images/branding/statically-mark.png" alt="Statically">
             <h3>Statically</h3>
           </div>
-          <p>A free and public CDN for static assets in GitHub, GitLab, and Bitbucket.</p>
-          <small>Founded: 2018 | Estimated users: 10K</small>
+          <p>Optimization & CDN for images, CSS, JavaScript, and open source.</p>
+          <small>Launched: 2018 | Estimated users: 10K</small>
         </a>
   
-        <a class="project" href="https://puredns.org">
+        <a class="project" href="https://thedev.id">
           <div class="header">
-            <img src="https://cdn.statically.io/img/upset.dev/w=40/img/black.png" alt="PureDNS">
-            <h3>PureDNS</h3>
+            <img src="https://avatar.fly.dev/puredns.svg?text=T" alt="thedev.id">
+            <h3>thedev.id</h3>
           </div>
-          <p>Open-source DNS resolver made for modern needs complete with DoT & DoH support.</p>
-          <small>Founded: 2020 | Estimated users: 1K</small>
+          <p>An identity for developers on the web.</p>
+          <small>Launched: 2020</small>
+        </a>
+
+        <a class="project" href="https://github.com/staticallyio/screenshot">
+          <div class="header">
+            <img src="https://avatar.fly.dev/favicons.svg?&text=F" alt="Screenshot">
+            <h3>Screenshot</h3>
+          </div>
+          <p>Automagically converts URLs into images and PDFs.</p>
+          <small>Launched: 2020</small>
         </a>
 
         <a class="project" href="https://github.com/staticallyio/favicons">
           <div class="header">
-            <img src="https://cdn.statically.io/img/upset.dev/w=40/img/black.png" alt="">
+            <img src="https://avatar.fly.dev/puredns.svg?text=F" alt="Favicons">
             <h3>Favicons</h3>
           </div>
-          <p>Open-source PHP application to retrieve favicons from any domain.</p>
-          <small>Founded: 2018</small>
+          <p>An open-source PHP application to retrieve favicons from any domain.</p>
+          <small>Launched: 2018</small>
+        </a>
+  
+        <a class="project" href="https://puredns.org">
+          <div class="header">
+            <img src="https://avatar.fly.dev/puredns.svg?text=P" alt="PureDNS">
+            <h3>PureDNS</h3>
+          </div>
+          <p>An open-source DNS resolver made for modern needs complete with DoT & DoH support.</p>
+          <small>Launched: 2020 | Estimated users: 1K</small>
+        </a>
+
+        <a class="project" href="https://wordpress.org/plugins/statically/">
+          <div class="header">
+            <img src="https://avatar.fly.dev/favicons.svg?text=WP" alt="statically-wp">
+            <h3>statically-wp</h3>
+          </div>
+          <p>A plugin to boost your WordPress website performance.</p>
+          <small>Launched: 2020 | 1000+ Active installs</small>
         </a>
       </div>
 
+      <div class="projects-inline">
+        <div>
+          <a href="https://github.com/fransallen/doh-server">
+            <h4>doh-server</h4>
+            A dockerized Rust DNS over HTTPS Server application.
+          </a>
+        </div>
+
+        <div>
+          <a href="https://github.com/fransallen/doh-client">
+            <h4>doh-client</h4>
+            A dockerized Go DNS over HTTPS Client application.
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="sponsors" class="section">
+      <h2 class="title">
+        I work with these companies
+      </h2>
+
+      <div class="sponsors-logo">
+        <div><img src="https://cdn.statically.io/img/statically.io/images/sponsors/fastly.svg" alt="Fastly"></div>
+        <div><img src="https://cdn.statically.io/img/statically.io/images/sponsors/cloudflare.svg" alt="Cloudflare"></div>
+        <div><img src="https://cdn.statically.io/img/statically.io/images/sponsors/ns1.svg" alt="NS1"></div>
+        <div><img src="https://cdn.statically.io/img/statically.io/images/sponsors/bunnycdn.svg" alt="BunnyCDN"></div>
+        <div><img src="https://cdn.statically.io/img/statically.io/images/sponsors/digitalocean.svg" alt="DigitalOcean"></div>
+      </div>
     </div>
   </main>
 
@@ -266,7 +441,7 @@
       </li>
 
       <li>
-        <a href="https://instagram.com/fransallen">
+        <a href="https://www.instagram.com/fransallen/">
           <i class="fab fa-instagram"></i> I do memes and photography
         </a>
       </li>
@@ -274,6 +449,12 @@
       <li>
         <a href="https://github.com/fransallen">
           <i class="fab fa-github"></i> Contribute to code
+        </a>
+      </li>
+
+      <li>
+        <a href="https://statically.discourse.group">
+          <i class="fab fa-discourse"></i> Community
         </a>
       </li>
     </div>
