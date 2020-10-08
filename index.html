@@ -234,39 +234,45 @@
     }
 
     footer {
+      border-top: 2px solid #666;
+      margin: 100px 0;
+    }
+
+    footer .content {
       display: flex;
       align-items: baseline;
       flex-flow: row wrap;
       justify-content: space-around;
-      border-top: 2px solid #666;
-      margin-top: 100px;
-      padding-top: 50px;
-      padding-bottom: 100px;
+      padding: 50px 0;
     }
 
-    footer div {
+    footer .content div {
       width: 50%;
     }
 
-    footer div:first-child {
+    footer .content div:first-child {
       padding-right: 40px;
     }
 
-    footer div+div {
+    footer .content div+div {
       width: 30%;
     }
 
-    footer li {
+    footer .content li {
       list-style: none;
     }
 
-    footer li+li a {
+    footer .content li+li a {
       display: block;
       margin-top: 10px;
     }
 
-    footer li i {
+    footer .content li i {
       margin-right: 5px;
+    }
+
+    footer .copyright {
+      text-align: center;
     }
 
     @media (max-width: 768px) {
@@ -295,12 +301,16 @@
         margin-top: 20px;
       }
 
-      footer div {
+      footer .content div {
         width: 100%!important;
       }
       
-      footer div+div {
+      footer .content div+div {
         margin-top: 40px;
+      }
+
+      footer .copyright {
+        text-align: left;
       }
     }
   </style>
@@ -446,35 +456,41 @@
   </main>
 
   <footer>
-    <div>
-      <h3>About this website</h3>
-      <p>Welcome to my personal website! This place is where I showcase the projects I'm working on, most of them are open source.</p>
+    <div class="content">
+      <div>
+        <h3>About this website</h3>
+        <p>Welcome to my personal website! This place is where I showcase the projects I'm working on, most of them are open source.</p>
+      </div>
+  
+      <div>
+        <li>
+          <a href="https://twitter.com/fransallen">
+            <i class="fab fa-twitter"></i> Follow me on Twitter
+          </a>
+        </li>
+  
+        <li>
+          <a href="https://www.instagram.com/fransallen/">
+            <i class="fab fa-instagram"></i> I do memes and photography
+          </a>
+        </li>
+  
+        <li>
+          <a href="https://github.com/fransallen">
+            <i class="fab fa-github"></i> Contribute to code
+          </a>
+        </li>
+  
+        <li>
+          <a href="https://statically.discourse.group">
+            <i class="fab fa-discourse"></i> Community
+          </a>
+        </li>
+      </div>
     </div>
 
-    <div>
-      <li>
-        <a href="https://twitter.com/fransallen">
-          <i class="fab fa-twitter"></i> Follow me on Twitter
-        </a>
-      </li>
-
-      <li>
-        <a href="https://www.instagram.com/fransallen/">
-          <i class="fab fa-instagram"></i> I do memes and photography
-        </a>
-      </li>
-
-      <li>
-        <a href="https://github.com/fransallen">
-          <i class="fab fa-github"></i> Contribute to code
-        </a>
-      </li>
-
-      <li>
-        <a href="https://statically.discourse.group">
-          <i class="fab fa-discourse"></i> Community
-        </a>
-      </li>
+    <div class="copyright">
+      Thanks to <a href="https://ljs.dev">ljs.dev</a> for buying me this cool domain.
     </div>
   </footer>
 </body>
