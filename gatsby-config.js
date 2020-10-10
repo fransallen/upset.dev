@@ -12,7 +12,7 @@ module.exports = {
         name: `upset.dev`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `https://cdn.statically.io/avatar/shape=circle/FA`,
+        icon: `static/images/icon.svg`,
       }
     },
     {
