@@ -12,7 +12,7 @@ module.exports = {
         name: `upset.dev`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `static/images/icon.svg`,
+        icon: `static/images/icon.png`,
       }
     },
     {
