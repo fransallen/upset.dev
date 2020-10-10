@@ -275,6 +275,20 @@
       text-align: center;
     }
 
+    .mt-8 {
+      margin-top: 2rem;
+    }
+
+    .see-more a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .see-more a svg {
+      margin-left: 6px;
+    }
+
     @media (max-width: 768px) {
       header {
         display: block;
@@ -425,6 +439,13 @@
         </div>
 
         <div>
+          <a href="https://github.com/fransallen/umami-wp">
+            <h4>Umami Analytics WordPress Plugin</h4>
+            Easily add Umami Analytics to your WordPress.
+          </a>
+        </div>
+
+        <div>
           <a href="https://github.com/fransallen/doh-server">
             <h4>DoH Server</h4>
             A dockerized Rust DNS over HTTPS Server application.
@@ -437,6 +458,13 @@
             A dockerized Go DNS over HTTPS Client application.
           </a>
         </div>
+      </div>
+
+      <div class="see-more mt-8">
+        <a class="umami--click--btn-see-more-projects" href="https://github.com/fransallen">
+          See more
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z"/></svg>
+        </a>
       </div>
     </div>
     
