@@ -4,7 +4,7 @@ const ProjectListItem = ({ project }) => {
   const startYear = new Date(project.startDate).getFullYear();
   const icon = project.icon
     ? project.icon
-    : 'https://cdn.statically.io/avatar/shape=rounded/' +
+    : 'https://cdn.statically.io/avatar/shape=circle/' +
       project.name.charAt(0);
   return (
     <a href={project.url} className="project">
