@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => (
     <div id="projects2">
       <Project2List projects2={data.takeshape.projects2} />
 
-      <div class="see-more mt-8">
+      <div class="see-more mt-10">
         <a
           class="umami--click--btn-see-more-projects"
           href="https://github.com/fransallen"
@@ -41,7 +41,7 @@ const IndexPage = ({ data }) => (
       </div>
     </div>
 
-    <div id="partners" className="section">
+    <div id="partners" className="section mt-20">
       <h2 className="title">I work with these companies</h2>
 
       <PartnerList partners={data.takeshape.partners} />

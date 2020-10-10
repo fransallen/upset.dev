@@ -266,11 +266,16 @@ footer .copyright {
   text-align: center;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .see-more a {
+  color: #6553ff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -278,6 +283,10 @@ footer .copyright {
 
 .see-more a svg {
   margin-left: 6px;
+}
+
+.see-more a svg path {
+  fill: #6553ff;
 }
 
 @media (max-width: 768px) {
