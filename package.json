@@ -1,0 +1,36 @@
+{
+  "name": "upset.dev",
+  "description": "Frans Allen's personal website.",
+  "version": "1.0.0",
+  "author": "Frans Allen",
+  "dependencies": {
+    "gatsby": "^2.24.2",
+    "gatsby-plugin-manifest": "^2.3.3",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-umami": "^0.1.2",
+    "gatsby-source-graphql": "^2.0.18",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.2.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "dotenv": "^6.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "prettier": "^1.14.2",
+    "prettier-stylelint": "^0.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fransallen/upset.dev"
+  }
+}
