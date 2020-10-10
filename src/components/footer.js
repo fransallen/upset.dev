@@ -21,7 +21,7 @@ const MenuFooter = ({ data }) => (
     <div className="content">
       <div>
         <h3>About this website</h3>
-        <div
+        <section
           dangerouslySetInnerHTML={{
             __html: data.takeshape.footer.descriptionHtml,
           }}
