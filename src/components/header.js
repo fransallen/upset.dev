@@ -40,11 +40,6 @@ const Header = ({ siteTitle }) => (
       content="https://cdn.statically.io/screenshot/upset.dev"
     />
     <link
-      rel="shortcut icon"
-      href="https://cdn.statically.io/avatar/shape=circle/FA"
-      type="image/icon"
-    />
-    <link
       rel="stylesheet"
       href="https://cdn.statically.io/libs/font-awesome/5.13.1/css/brands.min.css"
     />
