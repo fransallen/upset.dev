@@ -11,7 +11,8 @@ module.exports = {
       options: {
         name: `upset.dev`,
         start_url: `/`,
-        display: `minimal-ui`
+        display: `minimal-ui`,
+        icon: `https://cdn.statically.io/avatar/shape=circle/FA`,
       }
     },
     {
@@ -24,9 +25,9 @@ module.exports = {
         }/graphql`,
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${process.env.TAKESHAPE_TOKEN}`
+          Authorization: `Bearer ${process.env.TAKESHAPE_TOKEN}`,
         },
-        fetchOptions: {}
+        fetchOptions: {},
       }
     },
     {
