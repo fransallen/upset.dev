@@ -24,12 +24,12 @@ const Menu = ({ data }) => (
       {data.takeshape.about.socials.map((social, i) => (
         <li key={i}>
           <a href={social.url}>
-            <i class={social.icon}></i>
+            <i className={social.icon}></i>
           </a>
         </li>
       ))}
       <li>
-        <a href="https://www.patreon.com/fransallen" class="patreon">
+        <a href="https://www.patreon.com/fransallen" className="patreon">
           Become A Patron
         </a>
       </li>

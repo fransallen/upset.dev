@@ -32,7 +32,7 @@ const MenuFooter = ({ data }) => (
         {data.takeshape.footer.links.map((link, i) => (
           <li key={i}>
             <a href={link.url}>
-              <i class={link.icon}></i>
+              <i className={link.icon}></i>
               {link.text}
             </a>
           </li>

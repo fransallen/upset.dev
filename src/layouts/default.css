@@ -151,6 +151,20 @@ a.patreon {
   font-size: 50px;
 }
 
+.project-icon {
+  background: #000;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-right: 10px;
+  text-transform: capitalize;
+  width: 40px;
+  height: 40px;
+}
+
 .client img {
   max-width: 300px;
 }

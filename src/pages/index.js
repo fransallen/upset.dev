@@ -22,9 +22,9 @@ const IndexPage = ({ data }) => (
     <div id="projects2">
       <Project2List projects2={data.takeshape.projects2} />
 
-      <div class="see-more mt-10">
+      <div className="see-more mt-10">
         <a
-          class="umami--click--btn-see-more-projects"
+          className="umami--click--btn-see-more-projects"
           href="https://github.com/fransallen"
         >
           See more
@@ -32,8 +32,8 @@ const IndexPage = ({ data }) => (
             width="24"
             height="24"
             xmlns="http://www.w3.org/2000/svg"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
           >
             <path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" />
           </svg>
