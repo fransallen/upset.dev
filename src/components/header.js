@@ -9,27 +9,21 @@ const Header = ({ siteTitle }) => (
     <title>{siteTitle}</title>
     <meta
       name="description"
-      content="Independent software developer, creator of Statically, thedev.id, etc."
+      content="Frans Allen is creating Statically &amp; other open source software."
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@fransallen" />
-    <meta
-      name="twitter:title"
-      content="upset.dev - independent software developer"
-    />
+    <meta name="twitter:title" content="Frans Allen" />
     <meta
       name="twitter:description"
-      content="Independent software developer, creator of Statically, thedev.id, etc."
+      content="Frans Allen is creating Statically &amp; other open source software."
     />
     <meta property="og:url" content="https://upset.dev" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="upset.dev - independent software developer"
-    />
+    <meta property="og:title" content="Frans Allen" />
     <meta
       property="og:description"
-      content="Independent software developer, creator of Statically, thedev.id, etc."
+      content="Frans Allen is creating Statically &amp; other open source software."
     />
     <meta
       property="og:image"
