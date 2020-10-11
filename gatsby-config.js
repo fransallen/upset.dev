@@ -39,6 +39,7 @@ module.exports = {
         autoTrack: true,
         respectDoNotTrack: true,
       },
-    }
+    },
+    `gatsby-plugin-remove-generator`,
   ]
 };

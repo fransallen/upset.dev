@@ -7,8 +7,9 @@
     "gatsby": "^2.24.2",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-remove-generator": "^1.0.6",
     "gatsby-plugin-umami": "^0.1.2",
-    "gatsby-source-graphql": "^2.0.18",
+    "gatsby-source-graphql": "^2.7.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.0"
