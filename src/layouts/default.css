@@ -202,6 +202,10 @@ a.patreon {
   filter: grayscale(0);
 }
 
+.partner-google, .partner-amazon {
+  height: 40px!important;
+}
+
 .section {
   margin-bottom: 5em;
 }

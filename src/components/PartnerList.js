@@ -3,7 +3,7 @@ import React from 'react';
 const PartnerListItem = ({ partner }) => {
   return (
     <div>
-      <img src={partner.logo} alt={partner.name} title={partner.name} />
+      <img className={'partner-' + partner.name.toLowerCase()} src={partner.logo} alt={partner.name} />
     </div>
   );
 };
