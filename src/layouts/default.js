@@ -8,7 +8,7 @@ import './default.css';
 
 const Layout = ({ children }) => (
   <>
-    <Header siteTitle="upset.dev" />
+    <Header siteTitle="Frans Allen / upset.dev" />
     <Menu />
     <main>{children}</main>
     <Footer />
