@@ -33,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-umami`,
       options: {
-        websiteId: `f9d79de3-ecc3-4b2e-98b8-f00c314a58aa`,
+        websiteId: `024613e4-2391-49da-8577-c9aeb85e4e0b`,
         srcUrl: `https://anila.statically.io/script.js`,
         includeInDevelopment: false,
         autoTrack: true,
