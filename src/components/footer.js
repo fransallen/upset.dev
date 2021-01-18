@@ -8,7 +8,6 @@ const menuFooterQuery = graphql`
         descriptionHtml
         links {
           url
-          icon
           text
         }
       }
@@ -32,7 +31,6 @@ const MenuFooter = ({ data }) => (
         {data.takeshape.footer.links.map((link, i) => (
           <li key={i}>
             <a href={link.url}>
-              <i className={link.icon}></i>
               {link.text}
             </a>
           </li>

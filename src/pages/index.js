@@ -2,16 +2,30 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../layouts/default';
+import SEO from '../components/seo';
+
 import ProjectList from '../components/ProjectList';
 import Project2List from '../components/Project2List';
 import PartnerList from '../components/PartnerList';
 
+import FransAllenPhoto from '../../static/images/frans-allen.png';
+
 const IndexPage = ({ data }) => (
   <Layout>
-    <div
-      id="whoami"
-      dangerouslySetInnerHTML={{ __html: data.takeshape.about.bioHtml }}
+    <SEO
+      title="Web Performance And Security Resources"
+      description="Free web performance and security resources."
+      keywords={[`cdn`, `performance`, `security`, `linux`, `blog`]}
     />
+    <div className="block md:flex items-center" id="whoami">
+      <div className="text-center">
+        <img src={FransAllenPhoto} />
+      </div>
+      <div
+        className="bio"
+        dangerouslySetInnerHTML={{ __html: data.takeshape.about.bioHtml }}
+      />
+    </div>
 
     <div id="projects" className="section">
       <h2 className="title">Projects/OSS</h2>

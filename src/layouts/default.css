@@ -1,39 +1,17 @@
-.fab {
+body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-size: 1.2em;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-
-.fa-github:before {
-  content: "\f09b";
-}
-
-.fa-twitter:before {
-  content: "\f099";
-}
-
-.fa-instagram:before {
-  content: "\f16d";
-}
-
-.fa-discourse:before {
-  content:"\f393";
-}
-
-.fa-discord:before {
-  content: "\f392"; }
-
-body {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Arial, sans-serif;
+  font-size: 18px;
   margin: auto;
-  max-width: 920px;
+  max-width: 1024px;
   padding: 24px;
   color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 a {
@@ -43,11 +21,13 @@ a {
 }
 
 p {
-  font-size: 19px;
+  color: #1b1b1b;
+  font-size: 24px;
   line-height: 1.5;
+  letter-spacing: .01em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+strong {
   color: #000;
 }
 
@@ -68,16 +48,47 @@ header nav {
 }
 
 header nav li a {
-  padding: 15px;
+  border-radius: 4px;
+  margin: 0 .5em;
+  padding: .5em 1em;
 }
 
-#whoami {
-  margin-top: 24px;
-  max-width: 800px;
+header nav li a:hover, header nav li a[aria-current="page"] {
+  background: #ffdfdf;
 }
 
-#whoami a {
-  border-bottom: 2px solid #222;
+main {
+  padding-top: 3rem;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+#whoami img {
+  border-radius: 50%;
+  max-width: 300px;
+}
+
+#whoami .bio {
+  margin-left: 2rem;
+}
+
+p a, .blog-list h2 {
+  color: #1b1b1b;
+  border-bottom: 2px solid #ddd;
+}
+
+p a:hover, .blog-list h2:hover {
+  border-color: #222;
 }
 
 .title {
@@ -87,13 +98,12 @@ header nav li a {
   text-align: center;
 }
 
-a.patreon {
-  background: #e53e3e;
+.patreon a {
+  background: #e53e3e!important;
   border-radius: 4px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   color: #fff;
   margin-left: .7em;
-  padding: .5em;
 }
 
 .projects {
@@ -119,7 +129,7 @@ a.patreon {
   width: 25%;
 }
 
-.project:hover, a.patreon:hover {
+.project:hover, .patreon a:hover {
   box-shadow: 0 20px 25px -6px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .1);
 }
 
@@ -137,6 +147,7 @@ a.patreon {
 
 .project h3 {
   display: inline;
+  font-size: 24px;
 }
 
 .project p {
@@ -166,18 +177,6 @@ a.patreon {
   text-transform: capitalize;
   width: 40px;
   height: 40px;
-}
-
-.client img {
-  max-width: 300px;
-}
-
-.tech i {
-  font-size: 50px;
-}
-
-.tech i+i {
-  margin-left: 10px;
 }
 
 .partners-logo {
@@ -219,6 +218,7 @@ a.patreon {
 }
 
 .projects2 h4 {
+  font-size: 20px;
   margin: 0;
   margin-bottom: 5px;
 }
@@ -227,8 +227,10 @@ a.patreon {
   background: #fff;
   border: 1px solid #eaeaea;
   color: #333;
+  letter-spacing: .01em;
   padding: 1em;
   display: block;
+  font-size: 16px;
 }
 
 .projects2 a:hover {
@@ -247,14 +249,19 @@ a.patreon {
 
 footer {
   border-top: 2px solid #666;
+  font-size: 20px;
   margin: 100px 0;
+}
+
+footer p {
+  font-size: 20px;
 }
 
 footer .content {
   display: flex;
   align-items: baseline;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 50px 0;
 }
 
@@ -284,6 +291,7 @@ footer .content li i {
 }
 
 footer .copyright {
+  font-size: 18px;
   text-align: center;
 }
 
@@ -310,6 +318,231 @@ footer .copyright {
   fill: #6553ff;
 }
 
+/** Blog */
+.blog-list+.blog-list {
+  margin-top: 1rem;
+}
+
+.blog-list h2, .blog h1 {
+  display: inline;
+  font-weight: normal;
+}
+
+.blog-header h1 {
+  color: #1b1b1b;
+}
+
+.blog-content {
+  color: #1b1b1b;
+  font-size: 24px;
+  letter-spacing: .01em;
+  margin-top: 2rem;
+}
+
+.blog-content img {
+  max-width: 100%;
+  margin: 0;
+}
+
+.blog-content pre {
+  overflow-x: auto;
+  margin: 1.5em 0 3em;
+  padding: 20px;
+  max-width: 100%;
+  border: 1px solid #000;
+  color: #e5eff5;
+  font-size: 18px;
+  line-height: 1.5em;
+  background: #0e1012;
+  border-radius: 5px;
+}
+
+.blog-content code {
+  padding: 0 5px 2px;
+  font-size: 18px;
+  line-height: 1em;
+  font-weight: 400!important;
+  background: #e5eff5;
+  border-radius: 3px;
+}
+
+.blog-content pre code {
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+  background: transparent;
+}
+
+.blog-content blockquote {
+  margin: 0 0 1.5em;
+  padding: 0 1.5em;
+  border-left: 3px solid #3eb0ef;
+}
+
+.blog-content li {
+  margin: .5em 0;
+  padding-left: .3em;
+  line-height: 1.6em;
+}
+
+.blog-header .info {
+  margin-bottom: 10px;
+}
+
+.blog-header .info span, .blog-list .reading-time {
+  font-size: 16px;
+  font-weight: bold;
+  background: #fff35f;
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+
+.blog-list .reading-time {
+  background: #c9ecff;
+  margin-left: 10px;
+}
+
+.blog-header .meta {
+  margin-top: 10px;
+}
+
+.blog-content figure {
+  margin: .8em 0 2.3em;
+}
+
+.kg-bookmark-card {
+    width: 100%;
+}
+.blog-content .kg-bookmark-container, .blog-content .kg-bookmark-container:hover {
+  color: #15171a;
+  text-decoration: none;
+  box-shadow: 0 2px 5px -1px rgba(0,0,0,.15), 0 0 1px rgba(0,0,0,.09);
+}
+
+.blog-content .kg-bookmark-container {
+  display: flex;
+  min-height: 148px;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+  border-radius: 3px;
+}
+
+.kg-bookmark-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.kg-bookmark-title {
+  color: #303a3e;
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  font-weight: 600;
+  transition: color .2s ease-in-out;
+}
+
+.kg-bookmark-description {
+  display: -webkit-box;
+  overflow-y: hidden;
+  margin-top: 12px;
+  max-height: 48px;
+  color: #5c7078;
+  font-size: 1.2rem;
+  line-height: 1em;
+  font-weight: 400;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.kg-bookmark-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 14px;
+  color: #15171a;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.blog-content .kg-bookmark-icon {
+  margin-right: 8px;
+  width: 22px;
+  height: 22px;
+}
+
+.kg-bookmark-publisher {
+  overflow: hidden;
+  max-width: 240px;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #5c7078;
+  font-weight: bold;
+}
+
+.kg-bookmark-thumbnail {
+  position: relative;
+  min-width: 33%;
+  max-height: 100%;
+}
+
+.kg-bookmark-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.kg-gallery-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1040px;
+  width: 100%;
+}
+
+.kg-gallery-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.kg-gallery-image img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 640px) {
+  .patreon {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .blog-list .reading-time .r {
+    display: none;
+  }
+
+  p, .blog-content {
+    font-size: 20px;
+  }
+
+  .blog-content pre, .blog-content code {
+    font-size: 14px;
+  }
+
+  footer, footer p {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     display: block;
@@ -318,8 +551,23 @@ footer .copyright {
   }
 
   header nav {
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 2em;
+  }
+
+  header nav li a {
+    margin: 0;
+    padding: .5em;
+  }
+
+  main {
+    padding-top: 0rem;
+  }
+
+  #whoami .bio {
+    margin-top: 3rem;
+    margin-left: 0;
   }
 
   .projects {
@@ -346,5 +594,43 @@ footer .copyright {
 
   footer .copyright {
     text-align: left;
+  }
+
+  .blog-content figure {
+      margin: .2em 0 1.3em;
+  }
+
+  .blog-content .kg-bookmark-container {
+    flex-direction: column;
+  }
+
+  .kg-bookmark-content {
+    order: 2;
+  }
+
+  .kg-bookmark-thumbnail {
+    order: 1;
+    min-height: 160px;
+    width: 100%;
+  }
+
+  .blog-content .kg-width-wide {
+    margin-right: -3vw;
+    margin-left: -3vw;
+  }
+
+  .blog-list h2 {
+    font-size: 20px;
+  }
+
+  .blog-list .reading-time {
+    font-size: 14px;
+    padding: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
   }
 }

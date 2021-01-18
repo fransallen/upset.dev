@@ -1,5 +1,6 @@
 # Environment Variables
 .env
+.ghost.json
 
 # Project dependencies
 .cache

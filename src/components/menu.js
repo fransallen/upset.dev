@@ -6,8 +6,8 @@ const menuQuery = graphql`
     takeshape {
       about: getAbout {
         socials {
+          name
           url
-          icon
         }
       }
     }
@@ -24,12 +24,12 @@ const Menu = ({ data }) => (
       {data.takeshape.about.socials.map((social, i) => (
         <li key={i}>
           <a href={social.url}>
-            <i className={social.icon}></i>
+            {social.name}
           </a>
         </li>
       ))}
-      <li>
-        <a href="https://www.patreon.com/fransallen" className="patreon">
+      <li className="patreon">
+        <a href="https://www.patreon.com/fransallen">
           Become A Patron
         </a>
       </li>

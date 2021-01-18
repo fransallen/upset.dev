@@ -2,7 +2,10 @@ require(`dotenv`).config();
 
 module.exports = {
   siteMetadata: {
-    title: `upset.dev`
+    title: `Frans Allen`,
+    siteUrl: `https://upset.dev`,
+    description: `Web performance and security resources.`,
+    author: `@fransallen`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,6 +34,13 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-ghost`,
+      options: {
+        apiUrl: process.env.GHOST_API_URL,
+        contentApiKey: process.env.GHOST_CONTENT_API_KEY,
+      }
+    },
+    {
       resolve: `gatsby-plugin-umami`,
       options: {
         websiteId: `024613e4-2391-49da-8577-c9aeb85e4e0b`,
@@ -40,6 +50,7 @@ module.exports = {
         respectDoNotTrack: true,
       },
     },
+    `gatsby-plugin-catch-links`,
     `gatsby-plugin-remove-generator`,
   ]
 };
