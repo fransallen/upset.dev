@@ -9,10 +9,15 @@ const BlogPage = ({ data }) => (
   <Layout>
     <SEO
       title="Blog"
-      description="Web performance and security resources."
+      description="Provides the resources to build fast, secure, and reliable modern web applications."
       keywords={[`blog`, `news`, `ai`, `web`, `optimization`]}
     />
-    <div>
+    <div className="blogpage-header">
+      <h1>Blog</h1>
+      <p>From conceptual to technical, this blog helps provide the resources for building fast, secure, and reliable modern web applications.</p>
+    </div>
+
+    <div className="blogpage-content">
       <BlogList blogs={data.allGhostPost.nodes} />
     </div>
   </Layout>
@@ -26,7 +31,15 @@ export const query = graphql`
       nodes {
         slug
         title
-        reading_time
+        excerpt
+        published_at_pretty: published_at(formatString: "DD MMMM, YYYY")
+        primary_author {
+          name
+          profile_image
+        }
+        primary_tag {
+          name
+        }
       }
     }
   }

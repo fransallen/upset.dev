@@ -4,35 +4,40 @@ body {
   font-family: Arial, sans-serif;
   font-size: 18px;
   margin: auto;
-  max-width: 1024px;
+  max-width: 1280px;
   padding: 24px;
-  color: #222;
+  padding-top: 0;
+  color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #000;
+  color: #1b1b1b;
   font-family: "Source Sans Pro", sans-serif;
 }
 
+h1 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
 a {
-  color: #000;
+  color: #1b1b1b;
   text-decoration: none;
   transition-duration: .1s;
 }
 
 p {
-  color: #1b1b1b;
-  font-size: 24px;
+  color: #404040;
+  font-size: 20px;
   line-height: 1.5;
   letter-spacing: .01em;
 }
 
 strong {
-  color: #000;
-}
-
-h1 {
-  font-size: 2.5em;
+  color: #202020;
 }
 
 header {
@@ -48,9 +53,13 @@ header nav {
 }
 
 header nav li a {
+  font-size: 16px;
+  font-weight: bold;
   border-radius: 4px;
+  letter-spacing: -.5px;
   margin: 0 .5em;
-  padding: .5em 1em;
+  padding: .5em;
+  text-transform: uppercase;
 }
 
 header nav li a:hover, header nav li a[aria-current="page"] {
@@ -58,7 +67,13 @@ header nav li a:hover, header nav li a[aria-current="page"] {
 }
 
 main {
-  padding-top: 3rem;
+  margin: auto;
+  max-width: 1024px;
+  padding-top: 1rem;
+}
+
+.logo {
+  font-size: 2em;
 }
 
 .block {
@@ -73,6 +88,10 @@ main {
   align-items: center;
 }
 
+#whoami {
+  padding-top: 2rem;
+}
+
 #whoami img {
   border-radius: 50%;
   max-width: 300px;
@@ -82,13 +101,13 @@ main {
   margin-left: 2rem;
 }
 
-p a, .blog-list h2 {
-  color: #1b1b1b;
+p a {
+  color: #404040;
   border-bottom: 2px solid #ddd;
 }
 
-p a:hover, .blog-list h2:hover {
-  border-color: #222;
+p a:hover {
+  border-color: #404040;
 }
 
 .title {
@@ -147,7 +166,6 @@ p a:hover, .blog-list h2:hover {
 
 .project h3 {
   display: inline;
-  font-size: 24px;
 }
 
 .project p {
@@ -166,7 +184,7 @@ p a:hover, .blog-list h2:hover {
 }
 
 .project-icon {
-  background: #000;
+  background: #1b1b1b;
   border-radius: 50%;
   color: #fff;
   display: flex;
@@ -248,13 +266,13 @@ p a:hover, .blog-list h2:hover {
 }
 
 footer {
-  border-top: 2px solid #666;
-  font-size: 20px;
+  border-top: 2px solid #eee;
+  font-size: 16px;
   margin: 100px 0;
 }
 
 footer p {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 footer .content {
@@ -291,7 +309,7 @@ footer .content li i {
 }
 
 footer .copyright {
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -319,29 +337,101 @@ footer .copyright {
 }
 
 /** Blog */
+.blogpage-header {
+  text-align: center;
+  margin: auto;
+  max-width: 38rem;
+}
+
+.blogpage-header h1 {
+  margin-top: 0;
+}
+
+.blogpage-content {
+  margin: auto;
+  max-width: 48rem;
+  padding-top: 2rem;
+}
+
+.blog-list a .link {
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  transition-duration: .1s;
+}
+
+.blog-list a .link:hover {
+  background: #f5f5f5;
+}
+
+.blog-list .excerpt {
+  font-size: 18px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.blog-list .meta {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.blog-list .meta .profile-image img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.blog-list .meta .author {
+  margin-left: .5rem;
+}
+
+.blog-list .meta .author p, .blog-list .meta .author time {
+  color:#404040;
+  font-size: 14px;
+  margin: 0;
+}
+
 .blog-list+.blog-list {
   margin-top: 1rem;
 }
 
-.blog-list h2, .blog h1 {
+.blog-list h2 {
   display: inline;
-  font-weight: normal;
+  font-size: 20px;
 }
 
 .blog-header h1 {
   color: #1b1b1b;
+  display: inline;
 }
 
 .blog-content {
-  color: #1b1b1b;
-  font-size: 24px;
   letter-spacing: .01em;
   margin-top: 2rem;
 }
 
+.blog-content h3 {
+  font-size: 26px;
+  margin-top: 3rem;
+}
+
+.blog-content p {
+  color: #333;
+  font-size: 18px;
+}
+
 .blog-content img {
+  border: 1px solid #eee;
+  display: block;
   max-width: 100%;
-  margin: 0;
+  margin: 0 auto;
+}
+
+.blog-content figcaption {
+  margin: 1em auto 0;
+  color: #5c7078;
+  font-size: 75%;
+  line-height: 1.5em;
+  text-align: center;
 }
 
 .blog-content pre {
@@ -349,7 +439,7 @@ footer .copyright {
   margin: 1.5em 0 3em;
   padding: 20px;
   max-width: 100%;
-  border: 1px solid #000;
+  border: 1px solid #1b1b1b;
   color: #e5eff5;
   font-size: 18px;
   line-height: 1.5em;
@@ -374,6 +464,7 @@ footer .copyright {
 }
 
 .blog-content blockquote {
+  font-style: italic;
   margin: 0 0 1.5em;
   padding: 0 1.5em;
   border-left: 3px solid #3eb0ef;
@@ -385,25 +476,81 @@ footer .copyright {
   line-height: 1.6em;
 }
 
+.blog-header {
+  text-align: center;
+}
+
 .blog-header .info {
   margin-bottom: 10px;
 }
 
-.blog-header .info span, .blog-list .reading-time {
+.blog-footer {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.blog-footer a {
+  background: #e7f4ff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 6px 8px;
+}
+
+.blog-footer a span {
+  margin-left: 5px;
+}
+
+.blog-footer svg {
+  display: inline;
+  width: 16px;
+}
+
+.blog-list .info span {
   font-size: 16px;
   font-weight: bold;
-  background: #fff35f;
-  border-radius: 4px;
+  background: #fff89f;
+  border-radius: 6px;
   padding: 4px 6px;
 }
 
-.blog-list .reading-time {
-  background: #c9ecff;
-  margin-left: 10px;
+.blog-list .info {
+  margin-bottom: 1rem;
+}
+
+.blog-list .info span {
+  font-size: 14px;
 }
 
 .blog-header .meta {
-  margin-top: 10px;
+  color: #6b7280;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.blog-header .meta .author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.blog-header .meta img {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.blog {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 708px;
 }
 
 .blog-content figure {
@@ -526,20 +673,8 @@ footer .copyright {
     width: 100%;
   }
 
-  .blog-list .reading-time .r {
-    display: none;
-  }
-
-  p, .blog-content {
-    font-size: 20px;
-  }
-
   .blog-content pre, .blog-content code {
     font-size: 14px;
-  }
-
-  footer, footer p {
-    font-size: 18px;
   }
 }
 
@@ -619,13 +754,17 @@ footer .copyright {
     margin-left: -3vw;
   }
 
-  .blog-list h2 {
-    font-size: 20px;
+  .blog-header h1 {
+    font-size: 1.8em;
   }
 
-  .blog-list .reading-time {
-    font-size: 14px;
-    padding: 2px;
+  .blogpage-header p {
+    font-size: 18px;
+  }
+
+  .blog-header .meta .author {
+    margin-top: 1rem;
+    width: 100%;
   }
 }
 

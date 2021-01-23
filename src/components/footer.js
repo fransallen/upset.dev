@@ -28,6 +28,7 @@ const MenuFooter = ({ data }) => (
       </div>
 
       <div>
+        <h3>Connect</h3>
         {data.takeshape.footer.links.map((link, i) => (
           <li key={i}>
             <a href={link.url}>

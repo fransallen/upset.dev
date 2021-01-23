@@ -17,15 +17,15 @@ const menuQuery = graphql`
 const Menu = ({ data }) => (
   <header>
     <Link to="/">
-      <h1>upset.dev</h1>
+      <h2 className="logo">upset.dev</h2>
     </Link>
 
     <nav>
       {data.takeshape.about.socials.map((social, i) => (
         <li key={i}>
-          <a href={social.url}>
+          <Link to={social.url}>
             {social.name}
-          </a>
+          </Link>
         </li>
       ))}
       <li className="patreon">

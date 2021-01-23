@@ -13,8 +13,8 @@ import FransAllenPhoto from '../../static/images/frans-allen.png';
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO
-      title="Web Performance And Security Resources"
-      description="Free web performance and security resources."
+      title="Home"
+      description="Frans Allen is a founder, open source, and storyteller. He runs statically.io and other open source projects."
       keywords={[`cdn`, `performance`, `security`, `linux`, `blog`]}
     />
     <div className="block md:flex items-center" id="whoami">
@@ -56,7 +56,7 @@ const IndexPage = ({ data }) => (
     </div>
 
     <div id="partners" className="section mt-20">
-      <h2 className="title">I work with these companies</h2>
+      <h2 className="title">Partners</h2>
 
       <PartnerList partners={data.takeshape.partners} />
     </div>
