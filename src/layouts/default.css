@@ -485,12 +485,13 @@ footer .copyright {
 }
 
 .blog-footer {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   margin-top: 2rem;
 }
 
 .blog-footer a {
-  background: #e7f4ff;
+  background: #dcefff;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -498,8 +499,16 @@ footer .copyright {
   padding: 6px 8px;
 }
 
-.blog-footer a span {
+.blog-footer .right {
+  background: #dcd8ff;
+}
+
+.blog-footer .left span {
   margin-left: 5px;
+}
+
+.blog-footer .right span {
+  margin-right: 5px;
 }
 
 .blog-footer svg {
@@ -675,6 +684,14 @@ footer .copyright {
 
   .blog-content pre, .blog-content code {
     font-size: 14px;
+  }
+
+  .blog-footer {
+    display: block;
+  }
+
+  .blog-footer a+a {
+    margin-top: 1rem;
   }
 }
 
