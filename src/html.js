@@ -17,7 +17,7 @@ export default function HTML(props) {
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript">
-          statically.io works best with JavaScript enabled.
+          upset.dev works best with JavaScript enabled.
         </noscript>
         <div
           key={`body`}
