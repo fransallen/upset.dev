@@ -21,11 +21,16 @@ const Menu = ({ data }) => (
     </Link>
 
     <nav>
+      <li>
+        <Link to="/blog">
+          Blog
+        </Link>
+      </li>
       {data.takeshape.about.socials.map((social, i) => (
         <li key={i}>
-          <Link to={social.url}>
+          <a href={social.url}>
             {social.name}
-          </Link>
+          </a>
         </li>
       ))}
       <li className="patreon">
