@@ -441,7 +441,7 @@ footer .copyright {
   max-width: 100%;
   border: 1px solid #1b1b1b;
   color: #e5eff5;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.5em;
   background: #0e1012;
   border-radius: 5px;
@@ -449,7 +449,7 @@ footer .copyright {
 
 .blog-content code {
   padding: 0 5px 2px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1em;
   font-weight: 400!important;
   background: #e5eff5;
