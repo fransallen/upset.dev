@@ -10,7 +10,7 @@ const BlogListItem = ({ blog }) => {
             <span>{blog.primary_tag.name}</span>
           </div>
           <h2>{blog.title}</h2>
-          <p className="excerpt">web performance and security</p>
+          <p className="excerpt">{blog.custom_excerpt}</p>
           <div className="meta">
             <div className="profile-image">
               <img src={blog.primary_author.profile_image} />
