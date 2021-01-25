@@ -7,6 +7,7 @@ import SEO from '../components/seo';
 
 const Post = ({ data }) => {
   const post = data.ghostPost
+  const profileImage = post.primary_author.profile_image + '?w=40';
   const discussUrl = `https://twitter.com/search?q=${encodeURIComponent(
     `https://upset.dev/blog/${post.slug}`
   )}`;
@@ -23,7 +24,7 @@ const Post = ({ data }) => {
             <h1>{post.title}</h1>
             <div className="meta">
               <div className="published-at"><time>{post.published_at_pretty}</time> · {post.reading_time} minutes read</div>
-              <div className="author"><img src={post.primary_author.profile_image} /> {post.primary_author.name}</div>
+              <div className="author"><img src={profileImage} /> {post.primary_author.name}</div>
             </div>
           </div>
           <div

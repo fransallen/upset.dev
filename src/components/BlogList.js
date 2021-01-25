@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 const BlogListItem = ({ blog }) => {
-  const resizedAuthorImage = blog.primary_author.profile_image + '?w=40';
+  const profileImage = blog.primary_author.profile_image + '?w=40';
 
   return (
     <div className="blog-list">
@@ -15,7 +15,7 @@ const BlogListItem = ({ blog }) => {
           <p className="excerpt">{blog.excerpt}</p>
           <div className="meta">
             <div className="profile-image">
-              <img src={resizedAuthorImage} />
+              <img src={profileImage} />
             </div>
             <div className="author">
               <p><strong>{blog.primary_author.name}</strong></p>
