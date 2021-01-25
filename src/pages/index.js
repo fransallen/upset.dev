@@ -10,6 +10,8 @@ import PartnerList from '../components/PartnerList';
 
 import FransAllenPhoto from '../../static/images/frans-allen.png';
 
+const resizedFransPhoto = FransAllenPhoto + '?w=300';
+
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO
@@ -19,7 +21,7 @@ const IndexPage = ({ data }) => (
     />
     <div className="block md:flex items-center" id="whoami">
       <div className="text-center">
-        <img src={FransAllenPhoto} />
+        <img src={resizedFransPhoto} />
       </div>
       <div
         className="bio"
