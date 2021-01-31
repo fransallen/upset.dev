@@ -52,5 +52,6 @@ module.exports = {
     },
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-remove-generator`,
+    `gatsby-plugin-sitemap`,
   ]
 };
