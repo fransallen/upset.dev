@@ -58,7 +58,7 @@ const IndexPage = ({ data }) => (
     </div>
 
     <div id="partners" className="section mt-20">
-      <h2 className="title">Partners</h2>
+      <h2 className="title">Brands I've Partnered With</h2>
 
       <PartnerList partners={data.takeshape.partners} />
     </div>
