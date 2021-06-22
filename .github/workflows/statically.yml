@@ -20,6 +20,11 @@ jobs:
           export_default_credentials: true
 
       - name: Build & deploy to Statically
+        env:
+          GHOST_API_URL: ${{ secrets.GHOST_API_URL }}
+          GHOST_CONTENT_API_KEY: ${{ secrets.GHOST_CONTENT_API_KEY }}
+          TAKESHAPE_PROJECT: ${{ secrets.TAKESHAPE_PROJECT }}
+          TAKESHAPE_TOKEN: ${{ secrets.TAKESHAPE_TOKEN }}
         run: |
           git_hash=$(git rev-parse --short "$GITHUB_SHA")
           yarn
