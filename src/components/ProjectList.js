@@ -9,9 +9,7 @@ const ProjectListItem = ({ project }) => {
   return (
     <a href={project.url} className="project">
       <div className="header">
-        <div
-          dangerouslySetInnerHTML={{ __html: icon }}
-        />
+        <div dangerouslySetInnerHTML={{ __html: icon }} />
         <h3>{project.name}</h3>
       </div>
       <p>{project.description}</p>

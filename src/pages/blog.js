@@ -14,7 +14,10 @@ const BlogPage = ({ data }) => (
     />
     <div className="blogpage-header">
       <h1>Blog</h1>
-      <p>From conceptual to technical, this blog helps provide the resources for building fast, secure, and reliable modern web applications.</p>
+      <p>
+        From conceptual to technical, this blog helps provide the resources for
+        building fast, secure, and reliable modern web applications.
+      </p>
     </div>
 
     <div className="blogpage-content">

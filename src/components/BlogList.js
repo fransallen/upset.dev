@@ -17,7 +17,9 @@ const BlogListItem = ({ blog }) => {
               <img src={profileImage} />
             </div>
             <div className="author">
-              <p><strong>{blog.primary_author.name}</strong></p>
+              <p>
+                <strong>{blog.primary_author.name}</strong>
+              </p>
               <time className="published-at">{blog.published_at_pretty}</time>
             </div>
           </div>

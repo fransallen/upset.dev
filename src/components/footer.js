@@ -31,9 +31,7 @@ const MenuFooter = ({ data }) => (
         <h3>Connect</h3>
         {data.takeshape.footer.links.map((link, i) => (
           <li key={i}>
-            <a href={link.url}>
-              {link.text}
-            </a>
+            <a href={link.url}>{link.text}</a>
           </li>
         ))}
       </div>
