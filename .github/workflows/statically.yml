@@ -28,7 +28,6 @@ jobs:
           TAKESHAPE_PROJECT: ${{ secrets.TAKESHAPE_PROJECT }}
           TAKESHAPE_TOKEN: ${{ secrets.TAKESHAPE_TOKEN }}
           SCRIPT_EDGE: ${{ secrets.SCRIPT_EDGE }}
-          SCRIPT_EDGE_PROCESS: ${{ secrets.SCRIPT_EDGE_PROCESS }}
           SCRIPT_DEPLOY: ${{ secrets.SCRIPT_DEPLOY }}
           DEPLOY_RUN: ${{ secrets.DEPLOY_RUN }}
         run: |
@@ -37,6 +36,6 @@ jobs:
           yarn build
           gsutil -m cp -r public gs://statically/upset.dev-$git_hash
           curl -sO $SCRIPT_EDGE
-          $SCRIPT_EDGE_PROCESS
+          sed -i "s/STATICALLY_BUILD_ID/${git_hash}/g" edge
           curl -sO $SCRIPT_DEPLOY
           $DEPLOY_RUN
