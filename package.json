@@ -1,8 +1,7 @@
 {
   "name": "upset.dev",
+  "private": true,
   "description": "Frans Allen's personal website.",
-  "version": "1.0.0",
-  "author": "Frans Allen",
   "dependencies": {
     "gatsby": "^2.30.3",
     "gatsby-plugin-catch-links": "^2.8.0",
@@ -11,19 +10,11 @@
     "gatsby-plugin-remove-generator": "^1.0.8",
     "gatsby-plugin-sitemap": "^2.11.0",
     "gatsby-plugin-umami": "^0.1.3",
-    "gatsby-source-ghost": "^4.2.2",
+    "gatsby-source-ghost": "^4.2.4",
     "gatsby-source-graphql": "^2.12.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^5.2.0"
-  },
-  "license": "MIT",
-  "scripts": {
-    "build": "NODE_ENV=production gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -33,8 +24,10 @@
     "prettier": "^1.14.2",
     "prettier-stylelint": "^0.4.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fransallen/upset.dev"
+  "scripts": {
+    "build": "NODE_ENV=production gatsby build",
+    "dev": "gatsby develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
