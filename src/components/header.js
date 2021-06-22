@@ -22,7 +22,7 @@ const Menu = ({ data }) => (
 
     <nav>
       <li>
-        <Link to="/blog">
+        <Link to="/blog/">
           Blog
         </Link>
       </li>

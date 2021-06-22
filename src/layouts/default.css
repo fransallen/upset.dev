@@ -422,6 +422,7 @@ footer .copyright {
 .blog-content img {
   border: 1px solid #eee;
   display: block;
+  height: auto;
   max-width: 100%;
   margin: 0 auto;
 }

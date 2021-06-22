@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 const BlogListItem = ({ blog }) => {
   const profileImage = blog.primary_author.profile_image + '?w=40';
 
   return (
     <div className="blog-list">
-      <Link to={blog.slug}>
+      <a href={`${blog.slug}/`}>
         <div className="link">
           <div className="info">
             <span>{blog.primary_tag.name}</span>
@@ -23,7 +22,7 @@ const BlogListItem = ({ blog }) => {
             </div>
           </div>
         </div>
-      </Link>
+      </a>
     </div>
   );
 };
