@@ -1,0 +1,27 @@
+name: Statically
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@master
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          export_default_credentials: true
+
+      - name: Build & deploy to Statically
+        run: |
+          git_hash=$(git rev-parse --short "$GITHUB_SHA")
+          yarn
+          yarn build
+          gsutil cp -r public gs://statically/upset.dev-$git_hash
