@@ -27,15 +27,10 @@ jobs:
           GHOST_CONTENT_API_KEY: ${{ secrets.GHOST_CONTENT_API_KEY }}
           TAKESHAPE_PROJECT: ${{ secrets.TAKESHAPE_PROJECT }}
           TAKESHAPE_TOKEN: ${{ secrets.TAKESHAPE_TOKEN }}
-          SCRIPT_EDGE: ${{ secrets.SCRIPT_EDGE }}
-          SCRIPT_DEPLOY: ${{ secrets.SCRIPT_DEPLOY }}
-          DEPLOY_COMMAND: ${{ secrets.DEPLOY_COMMAND }}
+          STATICALLY_DEPLOYMENT: ${{ secrets.STATICALLY_DEPLOYMENT }}
         run: |
           git_hash=$(git rev-parse --short "$GITHUB_SHA")
           yarn
           yarn build
           gsutil -m cp -r public gs://statically/upset.dev-$git_hash
-          curl -sO $SCRIPT_EDGE
-          sed -i "s/STATICALLY_BUILD_ID/${git_hash}/g" main.vcl
-          curl -sO $SCRIPT_DEPLOY
-          $DEPLOY_COMMAND
+          $STATICALLY_DEPLOYMENT
