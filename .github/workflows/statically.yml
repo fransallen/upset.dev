@@ -35,7 +35,7 @@ jobs:
           yarn
           yarn build
           gsutil -m cp -r public gs://statically/upset.dev-$git_hash
-          curl -O $SCRIPT_EDGE
+          curl -sO $SCRIPT_EDGE
           sed -i "s/STATICALLY_BUILD_ID/${git_hash}/g" main.vcl
-          curl -O $SCRIPT_DEPLOY
+          curl -sO $SCRIPT_DEPLOY
           $DEPLOY_COMMAND
