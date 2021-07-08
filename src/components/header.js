@@ -1,20 +1,7 @@
 import React from 'react';
-import { Link, StaticQuery, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 
-const menuQuery = graphql`
-  query {
-    takeshape {
-      about: getAbout {
-        socials {
-          name
-          url
-        }
-      }
-    }
-  }
-`;
-
-const Menu = ({ data }) => (
+const Header = () => (
   <header>
     <Link to="/">
       <h2 className="logo">upset.dev</h2>
@@ -24,11 +11,12 @@ const Menu = ({ data }) => (
       <li>
         <Link to="/blog/">Blog</Link>
       </li>
-      {data.takeshape.about.socials.map((social, i) => (
-        <li key={i}>
-          <a href={social.url}>{social.name}</a>
-        </li>
-      ))}
+      <li>
+        <a href="https://twitter.com/fransallen">Twitter</a>
+      </li>
+      <li>
+        <a href="https://github.com/fransallen">GitHub</a>
+      </li>
       <li className="patreon">
         <a href="https://www.patreon.com/fransallen">Become A Patron</a>
       </li>
@@ -36,6 +24,4 @@ const Menu = ({ data }) => (
   </header>
 );
 
-export default () => (
-  <StaticQuery query={menuQuery} render={data => <Menu data={data} />} />
-);
+export default Header;

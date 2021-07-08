@@ -1,39 +1,29 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
 
-const menuFooterQuery = graphql`
-  query {
-    takeshape {
-      footer: getFooter {
-        descriptionHtml
-        links {
-          url
-          text
-        }
-      }
-    }
-  }
-`;
-
-const MenuFooter = ({ data }) => (
+const Footer = () => (
   <footer>
     <div className="content">
       <div>
         <h3>About this website</h3>
-        <section
-          dangerouslySetInnerHTML={{
-            __html: data.takeshape.footer.descriptionHtml,
-          }}
-        />
+        <section>
+          <p>Welcome to my personal website! This place is where I showcase the projects I'm working on, most of them are open source.</p>
+        </section>
       </div>
 
       <div>
         <h3>Connect</h3>
-        {data.takeshape.footer.links.map((link, i) => (
-          <li key={i}>
-            <a href={link.url}>{link.text}</a>
-          </li>
-        ))}
+        <li>
+          <a href="https://twitter.com/fransallen">Follow me on Twitter</a>
+        </li>
+        <li>
+          <a href="https://instagram.com/fransallen">Follow me on Instagram</a>
+        </li>
+        <li>
+          <a href="https://github.com/fransallen">Collaborate with me</a>
+        </li>
+        <li>
+          <a href="https://volt.fm/frans">My playlist</a>
+        </li>
       </div>
     </div>
 
@@ -44,9 +34,4 @@ const MenuFooter = ({ data }) => (
   </footer>
 );
 
-export default () => (
-  <StaticQuery
-    query={menuFooterQuery}
-    render={data => <MenuFooter data={data} />}
-  />
-);
+export default Footer;
