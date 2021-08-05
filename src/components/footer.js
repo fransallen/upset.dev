@@ -10,8 +10,11 @@ const Footer = () => (
         </section>
       </div>
 
-      <div>
+      <div class="connect">
         <h3>Connect</h3>
+        <li>
+          <a href="https://fransceo.com/">My Indonesian blog</a>
+        </li>
         <li>
           <a href="https://twitter.com/fransallen">Follow me on Twitter</a>
         </li>

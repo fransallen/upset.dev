@@ -23,7 +23,7 @@ const IndexPage = () => (
         <img src={resizedFransPhoto} />
       </div>
       <div className="bio">
-        <h2>Hey, I'm Frans Allen!</h2>
+        <h2>👋 Hi, I'm Frans Allen!</h2>
         <p>I am an independent software developer who loves to build things that can improve people's lives. Most of my work is open source and publicly available on <a href="https://github.com/fransallen">GitHub</a>.</p>
         <p>Outside of programming, I enjoy traveling, playing music and eating.</p>
       </div>
@@ -36,7 +36,7 @@ const IndexPage = () => (
         <a href="https://statically.io/" className="project">
           <div className="header">
             <div>
-              <img src="https://cdn.statically.io/img/statically.io/w=40/images/branding/statically-mark.png" alt="Statically" />
+              <img src="https://cdn.statically.io/img/statically.io/images/branding/statically-mark.svg" alt="Statically" />
             </div>
             <h3>Statically</h3>
           </div>
@@ -55,15 +55,15 @@ const IndexPage = () => (
           <small>Released in 2020</small>
         </a>
 
-        <a href="https://statically.io/wordpress/" className="project">
+        <a href="https://blobcdn.com/" className="project">
           <div className="header">
             <div>
-              <span class="project-icon">S</span>
+              <img style={{width: `42px`, height: `42px`, marginRight: `8px`}} src="https://cdn.statically.io/img/blobcdn.com/blobcdn-mark.svg" alt="BlobCDN" />
             </div>
-            <h3>statically-wp</h3>
+            <h3>BlobCDN</h3>
           </div>
-          <p>Statically + WordPress integration.</p>
-          <small>Released in 2020</small>
+          <p>On-the-fly SVG shapes maker.</p>
+          <small>Released in 2021</small>
         </a>
       </div>
     </div>
@@ -71,9 +71,9 @@ const IndexPage = () => (
     <div id="projects2">
       <div className="projects2">
         <div>
-          <a href="https://indostatus.com/">
-            <h4>Indostatus</h4>
-            Independent monitoring for government websites.
+          <a href="https://statically.io/wordpress/">
+            <h4>statically-wp</h4>
+            Statically + WordPress integration.
           </a>
         </div>
 
@@ -92,6 +92,13 @@ const IndexPage = () => (
         </div>
 
         <div>
+          <a href="https://github.com/staticallyio/icon">
+            <h4>Icon</h4>
+            Get a website icon by crawling HTML.
+          </a>
+        </div>
+
+        <div>
           <a href="https://github.com/fransallen/image-resizing">
             <h4>Image Resizing</h4>
             Simplified and query string version of Cloudflare Image Resizing using Workers.
@@ -99,9 +106,9 @@ const IndexPage = () => (
         </div>
 
         <div>
-          <a href="https://github.com/staticallyio/icon">
-            <h4>Icon</h4>
-            Get a website icon by crawling HTML.
+          <a href="https://indostatus.com/">
+            <h4>Indostatus</h4>
+            Independent monitoring for government websites.
           </a>
         </div>
 
