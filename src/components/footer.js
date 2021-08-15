@@ -44,7 +44,7 @@ const Footer = () => (
       </div>
       <div className="thanks-to">
         Special thanks to <a href="https://ljs.dev/">ljs.dev</a> for buying me
-        this super cool domain and all my sponsors, contributors, and followers
+        this super cool domain and to all my sponsors, contributors, and followers
         for supporting me on my journey ❤️
       </div>
     </div>
