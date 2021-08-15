@@ -1,6 +1,0 @@
-# Page redirects
-[[redirects]]
-  from = "https://upset.netlify.app/*"
-  to = "https://upset.dev"
-  status = 301
-  force = true

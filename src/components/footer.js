@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 
 const Footer = () => (
@@ -6,7 +7,10 @@ const Footer = () => (
       <div>
         <h3>About this website</h3>
         <section>
-          <p>Welcome to my personal website! This place is where I showcase the projects I'm working on, most of them are open source.</p>
+          <p>
+            Welcome to my personal website! This place is where I showcase the
+            projects I'm working on, most of them are open source.
+          </p>
         </section>
       </div>
 
@@ -19,20 +23,30 @@ const Footer = () => (
           <a href="https://twitter.com/fransallen">Follow me on Twitter</a>
         </li>
         <li>
-          <a href="https://instagram.com/fransallen">Follow me on Instagram</a>
+          <a href="https://www.instagram.com/fransallen/">
+            Follow me on Instagram
+          </a>
         </li>
         <li>
-          <a href="https://github.com/fransallen">Collaborate with me</a>
+          <a href="https://github.com/fransallen">Follow me on GitHub</a>
         </li>
         <li>
-          <a href="https://volt.fm/frans">My playlist</a>
+          <a href="https://www.linkedin.com/in/fransallen">
+            Let's connect on LinkedIn
+          </a>
         </li>
       </div>
     </div>
 
     <div className="copyright">
-      Thanks to <a href="https://ljs.dev">ljs.dev</a> for buying me this cool
-      domain.
+      <div>
+        &copy; 2021 <Link to="/">Frans Allen</Link>
+      </div>
+      <div className="thanks-to">
+        Special thanks to <a href="https://ljs.dev/">ljs.dev</a> for buying me
+        this super cool domain and all my sponsors, contributors, and followers
+        for supporting me on my journey ❤️
+      </div>
     </div>
   </footer>
 );

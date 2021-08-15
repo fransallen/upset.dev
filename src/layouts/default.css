@@ -11,7 +11,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #1b1b1b;
+  color: #333;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -23,8 +23,12 @@ h3 {
   font-size: 24px;
 }
 
+img {
+  vertical-align: middle;
+}
+
 a {
-  color: #1b1b1b;
+  color: #333;
   text-decoration: none;
   transition-duration: .1s;
 }
@@ -114,12 +118,13 @@ p a:hover {
 
 .title {
   font-size: 1.7em;
+  font-weight: 400;
   margin-top: 2em;
   margin-bottom: 1.8em;
   text-align: center;
 }
 
-.patreon a {
+.cta a {
   background: #000!important;
   background: linear-gradient(90deg, rgba(3,0,60,1) 0%, rgba(148,19,159,1) 35%, rgba(0,212,255,1) 100%)!important;
   border-radius: 4px;
@@ -142,9 +147,8 @@ p a:hover {
 }
 
 .project {
-  border: 1px solid #eaeaea;
+  border: 1px solid #f1f1f1;
   border-radius: 10px;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   margin-top: .5em;
   margin-left: .5em;
   padding: 10px 20px 25px;
@@ -152,7 +156,7 @@ p a:hover {
   width: 25%;
 }
 
-.project:hover, .patreon a:hover {
+.project:hover, .cta a:hover {
   box-shadow: 0 20px 25px -6px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .1);
 }
 
@@ -213,14 +217,9 @@ p a:hover {
 }
 
 .partners-logo img {
-  filter: grayscale(100%);
   transition-duration: .3s;
   height: 50px;
   max-width: 11rem;
-}
-
-.partners-logo img:hover{
-  filter: grayscale(0);
 }
 
 .partner-google, .partner-amazon {
@@ -247,12 +246,17 @@ p a:hover {
 
 .projects2 a {
   background: #fff;
-  border: 1px solid #eaeaea;
-  color: #555;
+  border: 1px solid #f1f1f1;
+  border-top-width: 0;
+  color: #666;
   letter-spacing: .01em;
   padding: 1em;
   display: block;
   font-size: 16px;
+}
+
+.projects2 div:first-child a {
+  border-top-width: 1px;
 }
 
 .projects2 a:hover {
@@ -270,7 +274,7 @@ p a:hover {
 }
 
 footer {
-  border-top: 2px solid #eee;
+  border-top: 1px solid #eee;
   font-size: 16px;
   margin: 100px auto;
   max-width: 1024px;
@@ -318,6 +322,18 @@ footer .copyright {
   text-align: center;
 }
 
+footer .thanks-to {
+  color: #999;
+  font-size: 13px;
+  margin: auto;
+  margin-top: 2rem;
+  max-width: 36rem;
+}
+
+footer .thanks-to a {
+  color: #777;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -349,6 +365,7 @@ footer .copyright {
 }
 
 .blogpage-header h1 {
+  font-weight: 400;
   margin-top: 0;
 }
 
@@ -406,6 +423,7 @@ footer .copyright {
 
 .blog-header h1 {
   color: #1b1b1b;
+  font-weight: 400;
   display: inline;
 }
 
@@ -686,8 +704,68 @@ footer .copyright {
   color: #555;
 }
 
+#products {
+  margin: auto;
+  max-width: 38rem;
+  padding-top: 2rem;
+}
+
+.upcoming .header h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.upcoming .header img {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: .75rem;
+}
+
+.upcoming .products a {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2rem;
+  transition-duration: .1s;
+  margin-top: calc(.75rem * calc(1 - 0));
+  margin-bottom: calc(.75rem * 0);
+}
+
+.upcoming .products a img, .upcoming .project-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.upcoming .products a h4, .upcoming .products a p {
+  margin: 0;
+}
+
+.upcoming .products a h4 {
+  font-size: 20px;
+}
+
+.upcoming .products a p {
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.products-all {
+  margin-top: 3rem;
+}
+
+.products-all h3 {
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.products-all .projects2 {
+  margin-top: 1.5rem;
+}
+
 @media (max-width: 640px) {
-  .patreon {
+  .cta {
     margin-top: 2rem;
     width: 100%;
   }

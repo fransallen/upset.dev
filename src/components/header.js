@@ -9,6 +9,9 @@ const Header = () => (
 
     <nav>
       <li>
+        <Link to="/projects/">Projects</Link>
+      </li>
+      <li>
         <Link to="/blog/">Blog</Link>
       </li>
       <li>
@@ -17,8 +20,8 @@ const Header = () => (
       <li>
         <a href="https://github.com/fransallen">GitHub</a>
       </li>
-      <li className="patreon">
-        <a href="https://www.patreon.com/fransallen">Become A Patron</a>
+      <li className="cta">
+        <a href="https://www.buymeacoffee.com/fransallen">Buy Me A Coffe</a>
       </li>
     </nav>
   </header>
