@@ -836,6 +836,10 @@ footer .thanks-to a {
     text-align: left;
   }
 
+  footer .thanks-to {
+    margin-left: 0;
+  }
+
   .blog-content figure {
       margin: .2em 0 1.3em;
   }
