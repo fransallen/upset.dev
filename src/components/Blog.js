@@ -7,7 +7,7 @@ import SEO from '../components/seo';
 
 const Post = ({ data }) => {
   const post = data.ghostPost;
-  const profileImage = post.primary_author.profile_image + '?w=40';
+  const profileImage = `https://cdn.statically.io/img/` + post.primary_author.profile_image.replace('https://', '') + '?w=40';
   const discussUrl = `https://twitter.com/search?q=${encodeURIComponent(
     `https://upset.dev/blog/${post.slug}/`,
   )}`;
