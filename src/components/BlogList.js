@@ -1,7 +1,7 @@
 import React from 'react';
 
 const BlogListItem = ({ blog }) => {
-  const profileImage = blog.primary_author.profile_image + '?w=40';
+  const profileImage = `https://cdn.statically.io/img/` + blog.primary_author.profile_image.replace('https://', '') + '?w=40';
 
   return (
     <div className="blog-list">

@@ -10,7 +10,7 @@ import logoCloudflare from '../../static/images/partners/cloudflare.svg';
 import logoFastly from '../../static/images/partners/fastly.svg';
 import logoDigitalocean from '../../static/images/partners/digitalocean.svg';
 
-const resizedFransPhoto = FransAllenPhoto + '?w=300';
+const resizedFransPhoto = `https://cdn.statically.io/img/upset.dev` + FransAllenPhoto + '?w=300';
 
 const IndexPage = () => (
   <Layout>
