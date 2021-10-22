@@ -58,7 +58,7 @@ const IndexPage = () => (
         <a href="https://thedev.id/" className="project">
           <div className="header">
             <div>
-              <span class="project-icon">t</span>
+              <span className="project-icon">t</span>
             </div>
             <h3>thedev.id</h3>
           </div>

@@ -14,7 +14,7 @@ const Footer = () => (
         </section>
       </div>
 
-      <div class="connect">
+      <div className="connect">
         <h3>Connect</h3>
         <li>
           <a href="https://fransceo.com/">My Indonesian blog</a>
