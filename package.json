@@ -3,6 +3,7 @@
   "private": true,
   "description": "Frans Allen's personal website.",
   "dependencies": {
+    "axios": "^0.23.0",
     "gatsby": "^2.30.3",
     "gatsby-plugin-catch-links": "^2.8.0",
     "gatsby-plugin-manifest": "^2.10.0",

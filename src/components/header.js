@@ -21,7 +21,7 @@ const Header = () => (
         <Link to="/press/">Press</Link>
       </li>
       <li className="cta">
-        <a href="https://www.buymeacoffee.com/fransallen">Buy Me A Coffe</a>
+        <a href="https://www.patreon.com/fransallen">Become A Patron</a>
       </li>
     </nav>
   </header>
