@@ -18,7 +18,7 @@ const Header = () => (
         <a href="https://twitter.com/fransallen">Twitter</a>
       </li>
       <li>
-        <a href="https://github.com/fransallen">GitHub</a>
+        <Link to="/press/">Press</Link>
       </li>
       <li className="cta">
         <a href="https://www.buymeacoffee.com/fransallen">Buy Me A Coffe</a>
