@@ -872,6 +872,12 @@ footer .thanks-to a {
   .blog-footer a+a {
     margin-top: 1rem;
   }
+
+  .take-me-out-form {
+    box-shadow: none;
+    border: 0;
+    padding: 0;
+  }
 }
 
 @media (max-width: 768px) {
