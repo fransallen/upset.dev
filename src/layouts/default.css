@@ -130,7 +130,7 @@ p a:hover {
   border-radius: 4px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   color: #fff;
-  margin-left: .7em;
+  margin-left: 1em;
   padding: .5em .7em;
 }
 
@@ -799,6 +799,10 @@ footer .thanks-to a {
   header nav li a {
     margin: 0;
     padding: .5em;
+  }
+
+  .cta a {
+    margin-left: 0;
   }
 
   main {
