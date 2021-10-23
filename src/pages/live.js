@@ -40,7 +40,7 @@ const LivePage = () => {
     <Layout>
       <SEO
         title="Live"
-        description="Watch whenever Frans Allen is on Live Streaming."
+        description="Watch whenever Frans Allen is on live stream."
         keywords={[`live`, `tech`, `frans allen`]}
       />
       <div className="blogpage-header">
