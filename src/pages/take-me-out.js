@@ -49,7 +49,7 @@ const TakeMeOutPage = () => {
       </div>
 
       <div id="products">
-        <form onSubmit={handleOnSubmit} className="take-me-out-form">
+        <form onSubmit={handleOnSubmit} className="form">
           <div className="ct">
             <h4 htmlFor="name">Food preference</h4>
             <div id="checkbox">

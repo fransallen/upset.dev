@@ -764,7 +764,7 @@ footer .thanks-to a {
   margin-top: 1.5rem;
 }
 
-.take-me-out-form {
+.form {
   --fa-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--fa-ring-offset-shadow, 0 0 #0000), var(--fa-ring-shadow, 0 0 #0000), var(--fa-shadow);
   border: 1px solid #eee;
@@ -772,7 +772,7 @@ footer .thanks-to a {
   padding: 40px;
 }
 
-.take-me-out-form h4 {
+.form h4 {
   font-size: 20px;
   font-weight: 700;
   display: block;
@@ -780,7 +780,7 @@ footer .thanks-to a {
   margin-bottom: 20px;
 }
 
-.take-me-out-form input {
+.form input {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 18px;
@@ -788,7 +788,7 @@ footer .thanks-to a {
   width: 60%;
 }
 
-.take-me-out-form input[type=submit] {
+.form input[type=submit] {
   background-color: #7bf9ff;
   border: 0;
   color: #333;
@@ -798,15 +798,15 @@ footer .thanks-to a {
   width: 200px;
 }
 
-.take-me-out-form input[type=submit]:hover, .take-me-out-form input[type=submit]:focus {
+.form input[type=submit]:hover, .form input[type=submit]:focus {
   background-color: #6df8ff;
 }
 
-.take-me-out-form div:first-child {
+.form div:first-child {
   margin-top: 0;
 }
 
-.take-me-out-form .ct {
+.form .ct {
   margin-top: 30px;
 }
 
@@ -873,7 +873,7 @@ footer .thanks-to a {
     margin-top: 1rem;
   }
 
-  .take-me-out-form {
+  .form {
     box-shadow: none;
     border: 0;
     padding: 0;
