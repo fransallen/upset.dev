@@ -77,8 +77,8 @@ const ProductsPage = () => (
           </div>
 
           <div>
-            <a href="https://cekwebsitesaya.com/">
-              <h4>CekWebsiteSaya.com</h4>
+            <a href="https://indihome.wtf/">
+              <h4>indihome.wtf</h4>
               Website checking tool using the Telkom Indonesia network.
             </a>
           </div>
