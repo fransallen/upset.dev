@@ -29,7 +29,7 @@ module.exports = {
       resolve: `gatsby-plugin-umami`,
       options: {
         websiteId: `024613e4-2391-49da-8577-c9aeb85e4e0b`,
-        srcUrl: `https://anila.statically.io/script.js`,
+        srcUrl: `https://respectedprivacy.com/app`,
         includeInDevelopment: false,
         autoTrack: true,
         respectDoNotTrack: true,
