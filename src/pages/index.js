@@ -4,11 +4,6 @@ import Layout from '../layouts/default';
 import SEO from '../components/seo';
 
 import FransAllenPhoto from '../../static/images/frans-allen.jpg';
-import logoGoogle from '../../static/images/partners/google.svg';
-import logoAmazon from '../../static/images/partners/amazon.svg';
-import logoCloudflare from '../../static/images/partners/cloudflare.svg';
-import logoFastly from '../../static/images/partners/fastly.svg';
-import logoDigitalocean from '../../static/images/partners/digitalocean.svg';
 
 const resizedFransPhoto = `https://cdn.statically.io/img/upset.dev` + FransAllenPhoto + '?w=300';
 
@@ -24,10 +19,10 @@ const IndexPage = () => (
         <img src={resizedFransPhoto} />
       </div>
       <div className="bio">
-        <h2>👋 Hi, I'm Frans Allen!</h2>
+        <h2 style={{fontSize: `2.2em`}}>Hi, I'm Frans Allen</h2>
 
         <p>
-          I am an independent software developer who loves to build things that
+          I am an <span className="text-gradient">independent software developer</span> who loves to build things that
           can improve people's lives. Most of my work is open source and
           publicly available on{' '}
           <a href="https://github.com/fransallen">GitHub</a>.
@@ -51,19 +46,8 @@ const IndexPage = () => (
             </div>
             <h3>Statically</h3>
           </div>
-          <p>A free CDN for developers.</p>
-          <small>Released in 2018</small>
-        </a>
-
-        <a href="https://thedev.id/" className="project">
-          <div className="header">
-            <div>
-              <span className="project-icon">t</span>
-            </div>
-            <h3>thedev.id</h3>
-          </div>
-          <p>An identity for developers on the web.</p>
-          <small>Released in 2020</small>
+          <p>The CDN for developers.</p>
+          <small><em>Released in 2018</em></small>
         </a>
 
         <a href="https://blobcdn.com/" className="project">
@@ -78,7 +62,18 @@ const IndexPage = () => (
             <h3>BlobCDN</h3>
           </div>
           <p>On-the-fly SVG shapes maker.</p>
-          <small>Released in 2021</small>
+          <small><em>Released in 2021</em></small>
+        </a>
+
+        <a href="https://http2.me/" className="project">
+          <div className="header">
+            <div>
+              <span className="project-icon">h</span>
+            </div>
+            <h3>http2.me</h3>
+          </div>
+          <p>Check HTTP/2 support.</p>
+          <small><em>Released in 2021</em></small>
         </a>
       </div>
     </div>
@@ -86,23 +81,23 @@ const IndexPage = () => (
     <div id="projects2">
       <div className="projects2">
         <div>
-          <a href="https://github.com/staticallyio/avatar">
-            <h4>Avatar</h4>A simple and beautiful avatar service.
+          <a href="https://dinly.co/">
+            <h4>Dinly</h4>
+            Simple URL shortener with analytics &amp; custom back-half.
           </a>
         </div>
 
         <div>
-          <a href="https://github.com/staticallyio/icon">
-            <h4>Icon</h4>
-            Get a website icon by crawling HTML.
+          <a href="https://thedev.id/">
+            <h4>thedev.id</h4>
+            An identity for developers on the web.
           </a>
         </div>
 
         <div>
           <a href="https://github.com/staticallyio/screenshot">
             <h4>Screenshot</h4>
-            Screenshot API to convert web to image or PDF. Supports desktop and
-            mobile view.
+            Open-source screenshot API.
           </a>
         </div>
 
@@ -127,40 +122,6 @@ const IndexPage = () => (
             <path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" />
           </svg>
         </Link>
-      </div>
-    </div>
-
-    <div id="partners" className="section mt-20">
-      <h2 className="title">Brands I've Partnered With</h2>
-
-      <div className="partners-logo">
-        <div>
-          <img className="partner-google" src={logoGoogle} alt="Google" />
-        </div>
-
-        <div>
-          <img className="partner-amazon" src={logoAmazon} alt="Amazon" />
-        </div>
-
-        <div>
-          <img
-            className="partner-cloudflare"
-            src={logoCloudflare}
-            alt="Cloudflare"
-          />
-        </div>
-
-        <div>
-          <img className="partner-fastly" src={logoFastly} alt="Fastly" />
-        </div>
-
-        <div>
-          <img
-            className="partner-digitalocean"
-            src={logoDigitalocean}
-            alt="DigitalOcean"
-          />
-        </div>
       </div>
     </div>
   </Layout>

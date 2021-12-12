@@ -18,49 +18,21 @@ const ProductsPage = () => (
       <div className="upcoming">
         <div className="header">
           <h3>
-            <img
-              src="https://cdn.statically.io/libs/twemoji/13.1.0/svg/1f973.svg"
-              alt="Partying face"
-            />
-            Upcoming!
+            Upcoming
           </h3>
         </div>
 
         <div className="products">
           <a
             href="https://twitter.com/devfess"
-            style={{ background: `#fffad9` }}
+            style={{ background: `#fff194` }}
           >
             <div>
               <span class="project-icon">D</span>
             </div>
             <div>
               <h4>Devfess</h4>
-              <p>A QnA-based community on Twitter.</p>
-            </div>
-          </a>
-
-          <a href="https://imagesimple.co/" style={{ background: `#e7fffe` }}>
-            <div>
-              <span class="project-icon">I</span>
-            </div>
-            <div>
-              <h4>ImageSimple</h4>
-              <p>
-                An affordable image optimization service well designed for
-                Indonesian users.
-              </p>
-            </div>
-          </a>
-
-          <a href="https://blobcdn.com/" style={{ background: `#ffeef7` }}>
-            <img
-              src="https://cdn.statically.io/img/blobcdn.com/blobcdn-mark.svg"
-              alt="BlobCDN"
-            />
-            <div>
-              <h4>BlobCDN</h4>
-              <p>The CDN for beautiful SVG shapes.</p>
+              <p>Devfess stands for developer confession.</p>
             </div>
           </a>
         </div>
@@ -69,6 +41,41 @@ const ProductsPage = () => (
       <div className="products-all">
         <h3>All my projects</h3>
         <div className="projects2">
+          <div>
+            <a href="https://http2.me/">
+              <h4>http2.me</h4>
+              The fun way to verify HTTP/2 support for websites and servers.
+            </a>
+          </div>
+
+          <div>
+            <a href="https://dinly.co/">
+              <h4>Dinly</h4>
+              Simple URL shortener with analytics &amp; custom back-half.
+            </a>
+          </div>
+
+          <div>
+            <a href="https://menolaklupa.org/">
+              <h4>Menolak Lupa</h4>
+              A small website to remember their names.
+            </a>
+          </div>
+
+          <div>
+            <a href="https://viraldarurat.com/">
+              <h4>Viral Darurat</h4>
+              Viral as a Service (VaaS) for the people who need it most.
+            </a>
+          </div>
+
+          <div>
+            <a href="https://blobcdn.com/">
+              <h4>BlobCDN</h4>
+              A simple CDN for generating SVG shapes on the fly.
+            </a>
+          </div>
+
           <div>
             <a href="https://indostatus.com/">
               <h4>Indostatus</h4>
@@ -107,7 +114,7 @@ const ProductsPage = () => (
 
       <div className="see-more mt-10">
         <a href="https://github.com/fransallen">
-          Check out my open source projects
+          Check out my open-source projects
           <svg
             width="24"
             height="24"

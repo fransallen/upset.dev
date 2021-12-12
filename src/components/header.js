@@ -12,9 +12,6 @@ const Header = () => (
         <Link to="/projects/">Projects</Link>
       </li>
       <li>
-        <Link to="/blog/">Blog</Link>
-      </li>
-      <li>
         <a href="https://twitter.com/fransallen">Twitter</a>
       </li>
       <li>
