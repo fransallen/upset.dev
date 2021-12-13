@@ -130,6 +130,10 @@ main {
   margin-left: 3rem;
 }
 
+#whoami .bio h2 {
+  font-size: 2.2em;
+}
+
 p a {
   border-bottom: 2px solid #b1c1d9;
 }
@@ -216,7 +220,7 @@ p a:hover {
 }
 
 .project-icon {
-  background: #1b1b1b;
+  background: #00e2ff;
   border-radius: 50%;
   color: #fff;
   display: flex;
@@ -926,6 +930,10 @@ footer .thanks-to a {
   #whoami .bio {
     margin-top: 3rem;
     margin-left: 0;
+  }
+
+  #whoami .bio h2 {
+    font-size: 1.8em;
   }
 
   .projects {

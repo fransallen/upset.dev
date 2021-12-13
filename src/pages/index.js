@@ -10,16 +10,16 @@ const resizedFransPhoto = `https://cdn.statically.io/img/upset.dev` + FransAllen
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Founder of Statically and other open source projects"
+      title="Indie Maker and Open Source Developer"
       description="I am an independent software developer who loves to build things that can improve people's lives."
-      keywords={[`open source`, `software`, `javascript`]}
+      keywords={[`indie maker`, `open source`, `developer`, `software`, `javascript`]}
     />
     <div className="block md:flex items-center" id="whoami">
       <div className="text-center">
         <img src={resizedFransPhoto} />
       </div>
       <div className="bio">
-        <h2 style={{fontSize: `2.2em`}}>Hi, I'm Frans Allen</h2>
+        <h2>Hi, I'm Frans Allen</h2>
 
         <p>
           I am an <span className="text-gradient">independent software developer</span> who loves to build things that
@@ -72,7 +72,7 @@ const IndexPage = () => (
             </div>
             <h3>http2.me</h3>
           </div>
-          <p>Check HTTP/2 support.</p>
+          <p>HTTP/2 tester tool.</p>
           <small><em>Released in 2021</em></small>
         </a>
       </div>
