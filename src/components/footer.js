@@ -40,7 +40,7 @@ const Footer = () => (
 
     <div className="copyright">
       <div>
-        &copy; 2021 <Link to="/">Frans Allen</Link>
+        &copy; <Link to="/">Frans Allen</Link>
       </div>
       <div className="thanks-to">
         Special thanks to <a href="https://ljs.dev/">ljs.dev</a> for buying me
