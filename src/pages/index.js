@@ -72,7 +72,7 @@ const IndexPage = () => (
             </div>
             <h3>http2.me</h3>
           </div>
-          <p>HTTP/2 tester tool.</p>
+          <p>HTTP/2 &amp; HTTP/3 tester tool.</p>
           <small><em>Released in 2021</em></small>
         </a>
       </div>
@@ -88,9 +88,9 @@ const IndexPage = () => (
         </div>
 
         <div>
-          <a href="https://thedev.id/">
-            <h4>thedev.id</h4>
-            An identity for developers on the web.
+          <a href="https://fontbit.io/">
+            <h4>fontbit.io</h4>
+            The CDN for Open Source Fonts.
           </a>
         </div>
 
@@ -98,13 +98,6 @@ const IndexPage = () => (
           <a href="https://github.com/staticallyio/screenshot">
             <h4>Screenshot</h4>
             Open-source screenshot API.
-          </a>
-        </div>
-
-        <div>
-          <a href="https://wordpress.org/plugins/statically/">
-            <h4>Statically WordPress Plugin</h4>
-            Statically + WordPress integration.
           </a>
         </div>
       </div>

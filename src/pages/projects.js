@@ -24,15 +24,15 @@ const ProductsPage = () => (
 
         <div className="products">
           <a
-            href="https://twitter.com/devfess"
-            style={{ background: `#fff194` }}
+            href="https://twitter.com/fransallen"
+            style={{ background: `#c0d4ff` }}
           >
             <div>
-              <span class="project-icon">D</span>
+              <span class="project-icon">P</span>
             </div>
             <div>
-              <h4>Devfess</h4>
-              <p>Devfess stands for developer confession.</p>
+              <h4>PureDNS</h4>
+              <p>Secure &amp; fast public DNS resolver.</p>
             </div>
           </a>
         </div>
@@ -41,6 +41,13 @@ const ProductsPage = () => (
       <div className="products-all">
         <h3>All my projects</h3>
         <div className="projects2">
+          <div>
+            <a href="https://facemashclone.com/">
+              <h4>Facemash Clone</h4>
+              The Facemash site in the The Social Network movie.
+            </a>
+          </div>
+
           <div>
             <a href="https://http2.me/">
               <h4>http2.me</h4>
@@ -56,30 +63,9 @@ const ProductsPage = () => (
           </div>
 
           <div>
-            <a href="https://menolaklupa.org/">
-              <h4>Menolak Lupa</h4>
-              A small website to remember their names.
-            </a>
-          </div>
-
-          <div>
-            <a href="https://viraldarurat.com/">
-              <h4>Viral Darurat</h4>
-              Viral as a Service (VaaS) for the people who need it most.
-            </a>
-          </div>
-
-          <div>
             <a href="https://blobcdn.com/">
               <h4>BlobCDN</h4>
               A simple CDN for generating SVG shapes on the fly.
-            </a>
-          </div>
-
-          <div>
-            <a href="https://indostatus.com/">
-              <h4>Indostatus</h4>
-              Independent monitoring for government websites.
             </a>
           </div>
 
@@ -94,13 +80,6 @@ const ProductsPage = () => (
             <a href="https://thedev.id/">
               <h4>thedev.id</h4>
               An identity for developers on the web.
-            </a>
-          </div>
-
-          <div>
-            <a href="https://github.com/fransallen/puredns">
-              <h4>PureDNS</h4>
-              An open source DNS resolver.
             </a>
           </div>
 
