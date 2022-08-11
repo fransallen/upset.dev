@@ -65,15 +65,15 @@ const IndexPage = () => (
           <small><em>Released in 2021</em></small>
         </a>
 
-        <a href="https://http2.me/" className="project">
+        <a href="https://puredns.org/" className="project">
           <div className="header">
             <div>
-              <span className="project-icon">h</span>
+              <span className="project-icon">P</span>
             </div>
-            <h3>http2.me</h3>
+            <h3>PureDNS</h3>
           </div>
-          <p>HTTP/2 &amp; HTTP/3 tester tool.</p>
-          <small><em>Released in 2021</em></small>
+          <p>A privacy-respecting and fast DNS Resolver.</p>
+          <small><em>Released in 2022</em></small>
         </a>
       </div>
     </div>
@@ -82,8 +82,8 @@ const IndexPage = () => (
       <div className="projects2">
         <div>
           <a href="https://dinly.co/">
-            <h4>Dinly</h4>
-            Simple URL shortener with analytics &amp; custom back-half.
+            <h4>httpcheck.net</h4>
+            HTTP/2 &amp; HTTP/3 tester tool.
           </a>
         </div>
 

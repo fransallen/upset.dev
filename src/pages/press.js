@@ -7,7 +7,7 @@ const PressPage = () => (
     <SEO
       title="Press"
       description="All press releases about the products I make and contribute."
-      keywords={[`press`, `news`, `frans allen`, `sirilius kevin`]}
+      keywords={[`press`, `news`, `frans allen`, `watermark ktp`, `puredns`]}
     />
     <div className="blogpage-header">
       <h1>Press</h1>
@@ -16,7 +16,18 @@ const PressPage = () => (
 
     <div id="products" style={{ paddingTop: `0` }}>
       <div className="products-all">
-        <h3>Sirilius Kevin</h3>
+        <h3>PureDNS</h3>
+        <div className="projects2">
+          <div>
+            <a href="https://www.liputan6.com/tekno/read/4961424/pengembang-indie-lokal-tawarkan-secure-dns-gratis-untuk-koneksi-internet-aman">
+              <h4>Liputan6</h4>
+              Pengembang Indie Lokal Tawarkan Secure DNS Gratis untuk Koneksi Internet Aman
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="products-all">
+        <h3>Watermark KTP</h3>
         <div className="projects2">
           <div>
             <a href="https://inet.detik.com/cyberlife/d-5800653/kevin-cah-yogya-pencipta-watermark-ktp-yang-sangat-berguna">

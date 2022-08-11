@@ -24,15 +24,15 @@ const ProductsPage = () => (
 
         <div className="products">
           <a
-            href="https://twitter.com/fransallen"
+            href="https://wpkilat.com/"
             style={{ background: `#c0d4ff` }}
           >
             <div>
-              <span class="project-icon">P</span>
+              <span class="project-icon">W</span>
             </div>
             <div>
-              <h4>PureDNS</h4>
-              <p>Secure &amp; fast public DNS resolver.</p>
+              <h4>WPKilat</h4>
+              <p>A WordPress Hosting for Professional.</p>
             </div>
           </a>
         </div>
@@ -41,6 +41,13 @@ const ProductsPage = () => (
       <div className="products-all">
         <h3>All my projects</h3>
         <div className="projects2">
+        <div>
+            <a href="https://puredns.org/">
+              <h4>PureDNS</h4>
+              A privacy-respecting and fast DNS Resolver.
+            </a>
+          </div>
+
           <div>
             <a href="https://facemashclone.com/">
               <h4>Facemash Clone</h4>
@@ -49,8 +56,8 @@ const ProductsPage = () => (
           </div>
 
           <div>
-            <a href="https://http2.me/">
-              <h4>http2.me</h4>
+            <a href="https://httpcheck.net/">
+              <h4>httpcheck.net</h4>
               The fun way to verify HTTP/2 support for websites and servers.
             </a>
           </div>
