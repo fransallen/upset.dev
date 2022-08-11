@@ -81,7 +81,7 @@ const IndexPage = () => (
     <div id="projects2">
       <div className="projects2">
         <div>
-          <a href="https://dinly.co/">
+          <a href="https://httpcheck.net/">
             <h4>httpcheck.net</h4>
             HTTP/2 &amp; HTTP/3 tester tool.
           </a>
