@@ -13,6 +13,13 @@ export default function HTML(props) {
           rel="stylesheet"
           href="https://fontbit.io/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap"
         />
+        <script
+          defer
+          type="text/javascript"
+          src="https://api.pirsch.io/pirsch.js"
+          id="pirschjs"
+          data-code="lCVviH51DAyy2sfVsZQfRNte267mrYcf"
+        ></script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
