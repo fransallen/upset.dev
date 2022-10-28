@@ -25,16 +25,6 @@ module.exports = {
         contentApiKey: process.env.GHOST_CONTENT_API_KEY,
       }
     },
-    {
-      resolve: `gatsby-plugin-umami`,
-      options: {
-        websiteId: `024613e4-2391-49da-8577-c9aeb85e4e0b`,
-        srcUrl: `https://respectedprivacy.com/app`,
-        includeInDevelopment: false,
-        autoTrack: true,
-        respectDoNotTrack: true,
-      },
-    },
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-remove-generator`,
     `gatsby-plugin-sitemap`,
