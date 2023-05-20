@@ -5,8 +5,8 @@ The source code for the upset.dev website.
 ## Start development server
 
 ```bash
-$ yarn
-$ yarn dev
+$ npm install
+$ npm run dev
 ```
 
-Visit http://localhost:8000
+Visit http://localhost:3000
