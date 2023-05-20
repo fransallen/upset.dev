@@ -1,19 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async rewrites() {
+  async headers() {
     return [
       {
-        source: "/css2:url*",
-        destination: "https://fonts-upset-dev.vercel.app/css2:url*",
-      },
-      {
-        source: "/css:url*",
-        destination:
-          "https://fonts-upset-dev-worker.statically.workers.dev/css:url*",
-      },
-      {
-        source: "/f/:path*",
-        destination: "https://fonts.gstatic.com/s/:path*",
+        source: "/",
+        headers: [
+          {
+            key: "cache-control",
+            value: "public, max-age=300, must-revalidate",
+          },
+        ],
       },
     ];
   },
