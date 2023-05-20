@@ -29,60 +29,25 @@ export default function Index() {
           <h2 className="font-semibold">Projects</h2>
           <ul className="space-y-4 mt-4">
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://statically.io"
-              >
-                Statically
-              </a>
+              <a href="https://statically.io">Statically</a>
             </li>
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://blobcdn.com"
-              >
-                BlobCDN
-              </a>
+              <a href="https://blobcdn.com">BlobCDN</a>
             </li>
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://puredns.org"
-              >
-                PureDNS
-              </a>
+              <a href="https://puredns.org">PureDNS</a>
             </li>
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://fonts.upset.dev"
-              >
-                Fonts
-              </a>
+              <a href="https://fonts.upset.dev">Fonts</a>
             </li>
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://httpcheck.upset.dev"
-              >
-                HTTP Check
-              </a>
+              <a href="https://httpcheck.upset.dev">HTTP Check</a>
             </li>
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://indiwtf.upset.dev"
-              >
-                Indiwtf
-              </a>
+              <a href="https://indiwtf.upset.dev">Indiwtf</a>
             </li>
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://thedev.id"
-              >
-                thedev.id
-              </a>
+              <a href="https://thedev.id">thedev.id</a>
             </li>
           </ul>
         </div>
@@ -90,44 +55,19 @@ export default function Index() {
           <h2 className="font-semibold">Social</h2>
           <ul className="font-mono space-y-4 mt-4">
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://twitter.com/fransallen"
-              >
-                Twitter
-              </a>
+              <a href="https://twitter.com/fransallen">Twitter</a>
             </li>
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://github.com/fransallen"
-              >
-                GitHub
-              </a>
+              <a href="https://github.com/fransallen">GitHub</a>
             </li>
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://instagram.com/fransallen"
-              >
-                Instagram
-              </a>
+              <a href="https://instagram.com/fransallen">Instagram</a>
             </li>
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://linkedin.com/in/fransallen"
-              >
-                LinkedIn
-              </a>
+              <a href="https://linkedin.com/in/fransallen">LinkedIn</a>
             </li>
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://facebook.com/frxallen"
-              >
-                Facebook
-              </a>
+              <a href="https://facebook.com/frxallen">Facebook</a>
             </li>
           </ul>
         </div>
@@ -138,10 +78,7 @@ export default function Index() {
         <div className="mt-4">
           <ul className="space-y-2">
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://www.liputan6.com/tekno/read/4961424/pengembang-indie-lokal-tawarkan-secure-dns-gratis-untuk-koneksi-internet-aman"
-              >
+              <a href="https://www.liputan6.com/tekno/read/4961424/pengembang-indie-lokal-tawarkan-secure-dns-gratis-untuk-koneksi-internet-aman">
                 Pengembang Indie Lokal Tawarkan Secure DNS Gratis untuk Koneksi
                 Internet Aman
               </a>
@@ -155,20 +92,10 @@ export default function Index() {
         <div className="mt-4">
           <ul className="space-y-2">
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://ljs.dev"
-              >
-                Leon Stafford
-              </a>
+              <a href="https://ljs.dev">Leon Stafford</a>
             </li>
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://sirilius.com"
-              >
-                Sirilius Kevin
-              </a>
+              <a href="https://sirilius.com">Sirilius Kevin</a>
             </li>
           </ul>
         </div>
@@ -179,28 +106,13 @@ export default function Index() {
         <div className="mt-4">
           <ul className="space-y-2">
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://watermarkktp.com"
-              >
-                Watermark KTP
-              </a>
+              <a href="https://watermarkktp.com">Watermark KTP</a>
             </li>
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://facemash.upset.dev"
-              >
-                Facemash Clone
-              </a>
+              <a href="https://facemash.upset.dev">Facemash Clone</a>
             </li>
             <li>
-              <a
-                className="hover:border-b border-b-gray-700"
-                href="https://kominfu.com"
-              >
-                Kominfu
-              </a>
+              <a href="https://kominfu.com">Kominfu</a>
             </li>
           </ul>
         </div>
@@ -211,13 +123,13 @@ export default function Index() {
           F
         </div>
         <div className="font-mono">
-          &copy; {new Date().getFullYear()}{" "}
-          <a
-            className="hover:border-b border-b-gray-700"
-            href="https://upset.dev"
-          >
-            Frans Allen
-          </a>
+          <div>
+            &copy; {new Date().getFullYear()}{" "}
+            <a href="https://upset.dev">Frans Allen</a>
+          </div>
+          <div className="text-xs mt-2">
+            <a href="https://github.com/fransallen/upset.dev">Source Code</a>
+          </div>
         </div>
       </footer>
     </div>
