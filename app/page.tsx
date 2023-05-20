@@ -4,7 +4,7 @@ export default function Index() {
   return (
     <div className="p-8 text-gray-700 max-w-sm md:max-w-xl mx-auto">
       <header className="pt-8 md:pt-16 text-center">
-        <Link href="/" className="inline-block">
+        <Link href="/" className="inline-block hover:border-none">
           <h1 className="text-3xl md:text-4xl text-black font-extrabold leading-tighter tracking-tighter mb-4">
             Frans Allen
           </h1>
