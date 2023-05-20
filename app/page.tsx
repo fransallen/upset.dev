@@ -8,12 +8,12 @@ export default function Index() {
           <h1 className="text-3xl md:text-4xl text-black font-extrabold leading-tighter tracking-tighter mb-4">
             Frans Allen
           </h1>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-xl md:text-2xl">
-              Founder, Software Engineer, Speaker
-            </p>
-          </div>
         </Link>
+        <div className="max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl">
+            Founder, Software Engineer, Speaker
+          </p>
+        </div>
       </header>
 
       <main className="py-16 text-sm flex font-mono justify-between">
