@@ -118,16 +118,15 @@ export default function Index() {
         </div>
       </section>
 
-      <footer className="py-16 text-center space-y-6 text-sm">
+      <footer className="py-16 text-center space-y-6 text-sm text-gray-700">
         <div className="flex justify-center items-center w-12 h-12 text-4xl font-bold rounded bg-black text-white mx-auto">
           F
         </div>
-        <div className="font-mono">
+        <div className="font-mono text-xs">
           <div>
-            &copy; {new Date().getFullYear()}{" "}
-            <a href="https://upset.dev">Frans Allen</a>
+            Made in <span className="text-gray-800">Yogyakarta, Indonesia</span>
           </div>
-          <div className="text-xs mt-2">
+          <div className="text-xs mt-4">
             <a href="https://github.com/fransallen/upset.dev">Source Code</a>
           </div>
         </div>

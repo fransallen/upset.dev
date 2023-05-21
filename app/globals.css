@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 a:hover {
-  @apply border-b border-b-gray-700;
+  @apply border-b border-transparent hover:border-gray-700;
 }
