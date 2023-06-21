@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-a:hover {
-  @apply border-b border-transparent hover:border-gray-700;
+#other-projects a {
+  @apply border-b;
+}
+
+#other-projects a:first-child {
+  @apply rounded-t-lg;
+}
+
+#other-projects a:last-child {
+  @apply border-b-0 rounded-b-lg;
 }

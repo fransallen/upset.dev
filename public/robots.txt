@@ -1,1 +1,5 @@
 User-agent: *
+Allow: /
+Allow: /api/og?*
+
+Sitemap: https://upset.dev/sitemap.xml
