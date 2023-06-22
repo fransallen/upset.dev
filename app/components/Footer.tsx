@@ -35,6 +35,7 @@ const apis = [{ name: "Indiwtf API", href: "https://indiwtf.upset.dev/api" }];
 
 const donate = [
   { name: "GitHub Sponsors", href: "https://github.com/sponsors/fransallen" },
+  { name: "Ko-fi", href: "https://ko-fi.com/fransallen" },
   { name: "Patreon", href: "https://patreon.com/fransallen" },
   { name: "Saweria", href: "https://saweria.co/fransallen" },
 ];
