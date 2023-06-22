@@ -183,9 +183,20 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="py-6 text-sm text-center text-slate-500">
-        All rights reserved &copy; {new Date().getFullYear()}{" "}
-        <Link href="/">Frans Allen</Link>
+      <div className="py-6 text-sm text-center text-slate-500 space-y-2">
+        <div>
+          All rights reserved &copy; {new Date().getFullYear()}{" "}
+          <Link href="/">Frans Allen</Link>
+        </div>
+        <div>
+          <a
+            className="block text-xs"
+            href="https://github.com/fransallen/upset.dev"
+            target="_blank"
+          >
+            Source Code
+          </a>
+        </div>
       </div>
     </footer>
   );
