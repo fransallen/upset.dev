@@ -44,8 +44,8 @@ const sitemap = [
   { name: "About", href: "/about" },
   { name: "Projects", href: "/#projects" },
   { name: "Press", href: "/#press" },
+  { name: "Hardware", href: "/hardware" },
   { name: "Contact", href: "/contact" },
-  { name: "Sitemap.xml", href: "/sitemap.xml" },
 ];
 
 export function Footer() {
@@ -179,6 +179,15 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <a
+                  href="/sitemap.xml"
+                  data-umami-event="footer-sitemap-sitemap-xml"
+                  className="hover:text-black/90"
+                >
+                  Sitemap.xml
+                </a>
+              </li>
             </ul>
           </div>
         </div>
