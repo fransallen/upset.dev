@@ -6,11 +6,23 @@ export async function GET(req: NextRequest, res: NextResponse) {
   try {
     const { searchParams } = new URL(req.url as string);
 
-    // ?title=<title>
-    const hasTitle = searchParams.has("title");
-    const title = hasTitle
+    const title = searchParams.has("title")
       ? searchParams.get("title")?.slice(0, 100)
       : "Generate OG image via URL";
+
+    let logo = searchParams.get("logo")?.slice(0, 100) as string;
+
+    switch (logo) {
+      case "favicone":
+        logo = "https://favicone.com/img/icon.svg";
+        break;
+      case "indiwtf":
+        logo = "https://indiwtf.upset.dev/img/icon.svg";
+        break;
+      default:
+        logo = !logo.startsWith("https://") ? "" : logo;
+        break;
+    }
 
     return new ImageResponse(
       (
@@ -26,17 +38,21 @@ export async function GET(req: NextRequest, res: NextResponse) {
             tw="flex items-center justify-center"
             style={{ justifyItems: "center" }}
           >
-            <h2 tw="flex justify-center items-center w-32 h-32 text-7xl font-bold rounded bg-black text-white mx-auto rounded-xl">
-              FA
-            </h2>
+            {logo ? (
+              <img src={logo} tw="w-32 h-32" />
+            ) : (
+              <h2 tw="flex justify-center items-center w-32 h-32 text-7xl font-bold bg-black text-white rounded-3xl m-0">
+                FA
+              </h2>
+            )}
           </div>
           <div
-            tw="text-black mt-2"
+            tw="text-black mt-8"
             style={{
               fontSize: 60,
               letterSpacing: "-0.025em",
               padding: "0 120px",
-              lineHeight: 1.4,
+              lineHeight: 1.2,
             }}
           >
             {title}
