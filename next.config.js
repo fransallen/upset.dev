@@ -8,6 +8,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/indiwtf",
+        destination: "https://indiwtf.upset.dev",
+        permanent: true,
+      },
+      {
         source: "/l/digitalocean",
         destination: "https://m.do.co/c/c57487ec51ca",
         permanent: false,
