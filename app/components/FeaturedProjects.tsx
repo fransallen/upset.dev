@@ -31,11 +31,11 @@ export function FeaturedProjects() {
         <a
           href="https://statically.io"
           target="_blank"
-          className="rounded-lg shadow bg-white cursor-pointer overflow-hidden transition-all duration-200 group hover:shadow-md sm:col-span-2"
+          className="rounded-lg shadow bg-white cursor-pointer overflow-hidden transition-all duration-200 group hover:shadow-md"
         >
           <div
             className="h-32 w-full flex justify-center items-center transition-all duration-200"
-            style={{ backgroundColor: "#ffeaea" }}
+            style={{ backgroundColor: "#ffcbcb" }}
           >
             <img className="w-14" src="/img/logo-statically.svg" />
           </div>
@@ -59,6 +59,7 @@ export function FeaturedProjects() {
             </div>
           </div>
         </a>
+
         <a
           href="https://puredns.org"
           target="_blank"
@@ -66,7 +67,7 @@ export function FeaturedProjects() {
         >
           <div
             className="h-32 w-full flex justify-center items-center transition-all duration-200"
-            style={{ backgroundColor: "#eaffef" }}
+            style={{ backgroundColor: "#ffeebf" }}
           >
             <img className="w-14" src="/img/logo-puredns.svg" />
           </div>
@@ -90,6 +91,39 @@ export function FeaturedProjects() {
             </div>
           </div>
         </a>
+
+        <a
+          href="https://favicone.com"
+          target="_blank"
+          className="rounded-lg shadow bg-white cursor-pointer overflow-hidden transition-all duration-200 group hover:shadow-md relative"
+        >
+          <div className="absolute bg-red-500 rounded px-2 py-1 text-white text-xs right-0">
+            New
+          </div>
+          <div
+            className="h-32 w-full flex justify-center items-center transition-all duration-200"
+            style={{ backgroundColor: "#bffff9" }}
+          >
+            <img className="w-12" src="/img/logo-favicone.svg" />
+          </div>
+          <div className="p-4">
+            <div className="flex items-center">
+              <h3 className="text-lg font-semibold text-black/90">Favicone</h3>
+            </div>
+            <div className="mt-3 text-sm">
+              A user-friendly API to get favicons from any website.
+            </div>
+            <div className="mt-2">
+              <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium leading-4 bg-blue-100 text-blue-800 mr-2">
+                Go
+              </span>
+              <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium leading-4 bg-gray-100 mr-2">
+                JavaScript
+              </span>
+            </div>
+          </div>
+        </a>
+
         <a
           href="https://blobcdn.com"
           target="_blank"
@@ -97,7 +131,7 @@ export function FeaturedProjects() {
         >
           <div
             className="h-32 w-full flex justify-center items-center transition-all duration-200"
-            style={{ backgroundColor: "#feeaff" }}
+            style={{ backgroundColor: "#ffcbe8" }}
           >
             <img className="w-14" src="/img/logo-blobcdn.svg" />
           </div>
@@ -115,6 +149,7 @@ export function FeaturedProjects() {
             </div>
           </div>
         </a>
+
         <a
           href="https://indiwtf.upset.dev"
           target="_blank"
@@ -122,7 +157,7 @@ export function FeaturedProjects() {
         >
           <div
             className="h-32 w-full flex justify-center items-center transition-all duration-200"
-            style={{ backgroundColor: "#eaf8ff" }}
+            style={{ backgroundColor: "#bfdcff" }}
           >
             <img className="w-14" src="/img/logo-indiwtf.svg" />
           </div>
@@ -140,6 +175,7 @@ export function FeaturedProjects() {
             </div>
           </div>
         </a>
+
         <a
           href="https://fonts.upset.dev"
           target="_blank"
@@ -147,15 +183,13 @@ export function FeaturedProjects() {
         >
           <div
             className="h-32 w-full flex justify-center items-center transition-all duration-200"
-            style={{ backgroundColor: "#ffffea" }}
+            style={{ backgroundColor: "#f2bfff" }}
           >
             <img className="w-12" src="/img/logo-fonts.svg" />
           </div>
           <div className="p-4">
             <div className="flex items-center">
-              <h3 className="text-lg font-semibold text-black/90">
-                fonts.upset.dev
-              </h3>
+              <h3 className="text-lg font-semibold text-black/90">Fonts</h3>
             </div>
             <div className="mt-3 text-sm">
               Simple and privacy-friendly Google Fonts proxy.
