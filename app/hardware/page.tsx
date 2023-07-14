@@ -27,6 +27,25 @@ const hardwares = [
   { name: "UPS", description: "Prolink PRO700SFC" },
 ];
 
+const hardwareImages = [
+  {
+    name: "Motherboard",
+    src: "msi-h310m-pro-vh.png",
+  },
+  {
+    name: "CPU",
+    src: "intel-core-i3-8100.png",
+  },
+  {
+    name: "PSU",
+    src: "infinity-striker-power-400w.png",
+  },
+  {
+    name: "Monitor",
+    src: "lg-24mp60g.png",
+  },
+];
+
 export default function Hardware() {
   return (
     <section className="pt-8 grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2 max-w-7xl mx-auto p-6 lg:px-8">
@@ -50,34 +69,15 @@ export default function Hardware() {
         </dl>
       </div>
       <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-        <Image
-          src="/img/msi-h310m-pro-vh.png"
-          width={500}
-          height={500}
-          alt="Motherboard"
-          className="bg-black/5 rounded-lg"
-        />
-        <Image
-          src="/img/intel-core-i3-8100.png"
-          width={500}
-          height={500}
-          alt="CPU"
-          className="bg-black/5 rounded-lg"
-        />
-        <Image
-          src="/img/infinity-striker-power-400w.png"
-          width={500}
-          height={500}
-          alt="PSU"
-          className="bg-black/5 rounded-lg"
-        />
-        <Image
-          src="/img/lg-24mp60g.png"
-          width={500}
-          height={500}
-          alt="Monitor"
-          className="bg-black/5 rounded-lg"
-        />
+        {hardwareImages.map((image) => (
+          <Image
+            src={`/img/${image.src}`}
+            width={500}
+            height={500}
+            alt={image.name}
+            className="bg-black/5 rounded-lg"
+          />
+        ))}
       </div>
     </section>
   );

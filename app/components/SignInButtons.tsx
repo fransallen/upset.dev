@@ -1,6 +1,7 @@
 "use client";
 
 import { signIn } from "next-auth/react";
+import Image from "next/image";
 
 export function SignInWithGoogleButton() {
   return (
@@ -8,10 +9,10 @@ export function SignInWithGoogleButton() {
       className="px-4 py-2 border flex gap-2 border-slate-200 rounded-lg hover:text-black/90 hover:shadow transition duration-150 mx-auto"
       onClick={() => signIn("google", { callbackUrl: process.env.SITE_URL })}
     >
-      <img
-        className="w-6 h-6"
-        src="/img/logo-google.svg"
-        loading="lazy"
+      <Image
+        src="/img/icon-google.svg"
+        width={24}
+        height={24}
         alt="Google logo"
       />
       <span>Sign in with Google</span>
@@ -25,10 +26,10 @@ export function SignInWithGithubButton() {
       className="px-4 py-2 border flex gap-2 border-slate-200 rounded-lg hover:text-black/90 hover:shadow transition duration-150 mx-auto"
       onClick={() => signIn("github", { callbackUrl: process.env.SITE_URL })}
     >
-      <img
-        className="w-6 h-6"
-        src="/img/logo-github.svg"
-        loading="lazy"
+      <Image
+        src="/img/icon-github.svg"
+        width={24}
+        height={24}
         alt="GitHub logo"
       />
       <span>Sign in with GitHub</span>

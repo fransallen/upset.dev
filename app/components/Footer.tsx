@@ -9,15 +9,16 @@ import {
 } from "react-icons/fa";
 
 const projects = [
-  { name: "Statically", href: "https://statically.io" },
-  { name: "PureDNS", href: "https://puredns.org" },
-  { name: "BlobCDN", href: "https://blobcdn.com" },
-  { name: "Fonts", href: "https://fonts.upset.dev" },
-  { name: "HTTP Check", href: "https://httpcheck.upset.dev" },
-  { name: "Indiwtf", href: "https://indiwtf.upset.dev" },
-  { name: "thedev.id", href: "https://thedev.id" },
-  { name: "Facemash Clone", href: "https://facemash.upset.dev" },
-  { name: "Kominfu", href: "https://kominfu.com" },
+  { name: "Statically", href: "https://statically.io", blank: true },
+  { name: "PureDNS", href: "https://puredns.org", blank: true },
+  { name: "Favicone", href: "https://favicone.com", blank: true },
+  { name: "BlobCDN", href: "https://blobcdn.com", blank: true },
+  { name: "Fonts", href: "https://fonts.upset.dev", blank: true },
+  { name: "HTTP Check", href: "https://httpcheck.upset.dev", blank: true },
+  { name: "Indiwtf", href: "https://indiwtf.upset.dev", blank: true },
+  { name: "thedev.id", href: "https://thedev.id", blank: true },
+  { name: "Facemash Clone", href: "https://facemash.upset.dev", blank: true },
+  { name: "Kominfu", href: "/kominfu", blank: false },
 ];
 
 const oss = [
@@ -58,36 +59,46 @@ export function Footer() {
               Frans Allen
             </div>
             <p>Founder. Engineer. Speaker.</p>
-            <div className="flex justify-center lg:justify-normal space-x-4 text-black/80 pt-6">
+            <div className="flex justify-center lg:justify-normal space-x-4 text-black/80 pt-6 text-xl">
               <a
                 href="https://twitter.com/fransallen"
+                rel="noopener noreferrer"
+                target="_blank"
                 className="flex items-center hover:text-black/90"
               >
-                <FaTwitter className="w-5 h-5 fill-current" />
+                <FaTwitter />
               </a>
               <a
                 href="https://github.com/fransallen"
+                rel="noopener noreferrer"
+                target="_blank"
                 className="flex items-center hover:text-black/90"
               >
-                <FaGithub className="w-5 h-5 fill-current" />
+                <FaGithub />
               </a>
               <a
                 href="https://linkedin.com/in/fransallen"
+                rel="noopener noreferrer"
+                target="_blank"
                 className="flex items-center hover:text-black/90"
               >
-                <FaLinkedin className="w-5 h-5 fill-current" />
+                <FaLinkedin />
               </a>
               <a
                 href="https://instagram.com/fransallen"
+                rel="noopener noreferrer"
+                target="_blank"
                 className="flex items-center hover:text-black/90"
               >
-                <FaInstagram className="w-5 h-5 fill-current" />
+                <FaInstagram />
               </a>
               <a
                 href="https://facebook.com/frxallen"
+                rel="noopener noreferrer"
+                target="_blank"
                 className="flex items-center hover:text-black/90"
               >
-                <FaFacebookSquare className="w-5 h-5 fill-current" />
+                <FaFacebookSquare />
               </a>
             </div>
           </div>
@@ -97,11 +108,10 @@ export function Footer() {
             <h3 className="tracking-wide font-semibold">Projects</h3>
             <ul className="space-y-2">
               {projects.map((item) => (
-                <li>
+                <li key={item.name}>
                   <Link
-                    key={item.name}
                     href={item.href}
-                    target="_blank"
+                    target={item.blank ? "_blank" : "_self"}
                     data-umami-event={"footer-project-" + item.name}
                     className="hover:text-black/90"
                   >
@@ -115,16 +125,15 @@ export function Footer() {
             <h3 className="tracking-wide font-semibold">Open Source</h3>
             <ul className="space-y-2">
               {oss.map((item) => (
-                <li>
-                  <Link
-                    key={item.name}
+                <li key={item.name}>
+                  <a
                     href={item.href}
                     target="_blank"
                     data-umami-event={"footer-oss-" + item.name}
                     className="hover:text-black/90"
                   >
                     {item.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -132,9 +141,8 @@ export function Footer() {
             <h3 className="tracking-wide font-semibold pt-2">APIs</h3>
             <ul className="space-y-2">
               {apis.map((item) => (
-                <li>
+                <li key={item.name}>
                   <Link
-                    key={item.name}
                     href={item.href}
                     target="_blank"
                     data-umami-event={"footer-api-" + item.name}
@@ -150,16 +158,16 @@ export function Footer() {
             <h3 className="tracking-wide font-semibold">Become A Sponsor</h3>
             <ul className="space-y-2">
               {donate.map((item) => (
-                <li>
-                  <Link
-                    key={item.name}
+                <li key={item.name}>
+                  <a
                     href={item.href}
                     target="_blank"
+                    rel="noopener noreferrer"
                     data-umami-event={"footer-donate-" + item.name}
                     className="hover:text-black/90"
                   >
                     {item.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -168,9 +176,8 @@ export function Footer() {
             <h3 className="tracking-wide font-semibold">Sitemap</h3>
             <ul className="space-y-2">
               {sitemap.map((item) => (
-                <li>
+                <li key={item.name}>
                   <Link
-                    key={item.name}
                     href={item.href}
                     data-umami-event={"footer-sitemap-" + item.name}
                     className="hover:text-black/90"

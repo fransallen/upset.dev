@@ -1,12 +1,13 @@
 # upset.dev
 
-The source code for the upset.dev website.
+Source code of the upset.dev website.
 
 ## Start development server
 
+Copy the `.env.example` file to `.env.local` and filling it with the appropriate values, and then run:
+
 ```bash
-$ npm install
-$ npm run dev
+$ bun i && bun run dev
 ```
 
 Visit http://localhost:3000

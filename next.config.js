@@ -1,5 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.giphy.com",
+        pathname: "/media/**",
+      },
+    ],
+  },
   async redirects() {
     return [
       {
@@ -50,11 +59,6 @@ const nextConfig = {
       {
         source: "/facemash",
         destination: "https://facemash.upset.dev",
-        permanent: true,
-      },
-      {
-        source: "/kominfu",
-        destination: "https://kominfu.com",
         permanent: true,
       },
       {

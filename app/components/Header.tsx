@@ -27,9 +27,7 @@ const loggedInMenu = [
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { data: session, status } = useSession();
-  const userAvatar = session?.user?.image;
-  const userName = session?.user?.name;
+  const { status } = useSession();
 
   return (
     <header className="bg-white">

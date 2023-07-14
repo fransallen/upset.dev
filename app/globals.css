@@ -13,3 +13,11 @@
 #other-projects a:last-child {
   @apply border-b-0 rounded-b-lg;
 }
+
+a {
+  @apply transition;
+}
+
+#kominfu-tweets .twitter-tweet {
+  margin: auto;
+}

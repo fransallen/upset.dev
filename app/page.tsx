@@ -13,8 +13,15 @@ export default function Index() {
           I am an independent software developer who loves to build things that
           can improve people's lives. Most of my work is open source and
           publicly available on{" "}
-          <a href="https://github.com/fransallen">GitHub</a>. Get to know me
-          better by visiting my <Link href="/about">about</Link> page.
+          <a
+            href="https://github.com/fransallen"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            GitHub
+          </a>
+          . Get to know me better by visiting my{" "}
+          <Link href="/about">about</Link> page.
         </p>
       </article>
 

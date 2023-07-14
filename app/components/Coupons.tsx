@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const coupons = [
@@ -24,15 +25,17 @@ export function Coupons() {
           <Link
             key={item.name}
             href={item.href}
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             target="_blank"
             data-umami-event={"coupon-" + item.name}
             className=" hover:bg-gray-100 py-4 px-6 -mx-6 transition-all duration-200 flex items-center space-x-4 rounded-lg"
           >
-            <img
-              src={`/img/logo-${item.logo}.svg`}
+            <Image
+              src={`/img/icon-${item.logo}.svg`}
               className="w-10 h-10"
-              alt={`Logo ${item.logo}`}
+              width={52}
+              height={52}
+              alt={`Logo ${item.name}`}
             />
             <div>
               <h5 className="font-semibold">{item.name}</h5>

@@ -14,13 +14,13 @@ export async function GET(req: NextRequest, res: NextResponse) {
 
     switch (logo) {
       case "favicone":
-        logo = "https://favicone.com/img/icon.svg";
+        logo = "https://upset.dev/img/icon-favicone.svg";
         break;
       case "indiwtf":
-        logo = "https://indiwtf.upset.dev/img/icon.svg";
+        logo = "https://upset.dev/img/icon-indiwtf.svg";
         break;
       default:
-        logo = !logo.startsWith("https://") ? "" : logo;
+        logo = !logo ? "" : logo;
         break;
     }
 
@@ -39,7 +39,7 @@ export async function GET(req: NextRequest, res: NextResponse) {
             style={{ justifyItems: "center" }}
           >
             {logo ? (
-              <img src={logo} tw="w-32 h-32" />
+              <img src={logo} width={128} height={128} />
             ) : (
               <h2 tw="flex justify-center items-center w-32 h-32 text-7xl font-bold bg-black text-white rounded-3xl m-0">
                 FA

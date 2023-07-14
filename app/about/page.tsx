@@ -71,10 +71,17 @@ export default function About() {
       <p>
         In an effort to share my knowledge and experiences, I actively engage
         with the software engineering community through my Twitter handle{" "}
-        <a href="https://twitter.com/fransallen">@fransallen</a>. There, I offer
-        concise tutorials, valuable hacks, and share my opinions on the field,
-        all within the constraints of 280 characters or so. If you would like to
-        connect, don't hesitate to say hello on Twitter!
+        <a
+          href="https://twitter.com/fransallen"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          @fransallen
+        </a>
+        . There, I offer concise tutorials, valuable hacks, and share my
+        opinions on the field, all within the constraints of 280 characters or
+        so. If you would like to connect, don't hesitate to say hello on
+        Twitter!
       </p>
       <p>
         With a relentless pursuit of excellence and an unyielding passion for
