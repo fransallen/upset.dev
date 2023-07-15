@@ -21,3 +21,11 @@ a {
 #kominfu-tweets .twitter-tweet {
   margin: auto;
 }
+
+footer .external-link svg {
+  @apply translate-y-1.5 -translate-x-0.5 transition duration-300 ease-in-out hidden md:block;
+}
+
+footer .external-link:hover svg {
+  @apply translate-y-1 translate-x-0;
+}

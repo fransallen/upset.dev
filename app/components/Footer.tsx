@@ -7,6 +7,7 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
+import { HiArrowUpRight } from "react-icons/hi2";
 
 const projects = [
   { name: "Statically", href: "https://statically.io", blank: true },
@@ -107,59 +108,62 @@ export function Footer() {
           </div>
         </div>
         <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-5/6 sm:grid-cols-4">
-          <div className="space-y-3">
+          <div className="space-y-4">
             <h3 className="tracking-wide font-semibold">Projects</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {projects.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
                     target={item.blank ? "_blank" : "_self"}
                     data-umami-event={"footer-project-" + item.name}
-                    className="hover:text-black/90"
+                    className="flex space-x-1 hover:text-black/90 external-link"
                   >
-                    {item.name}
+                    <span>{item.name}</span>
+                    {item.blank ? <HiArrowUpRight className="w-3 h-3" /> : ""}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="space-y-3">
+          <div className="space-y-4">
             <h3 className="tracking-wide font-semibold">Open Source</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {oss.map((item) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
                     target="_blank"
                     data-umami-event={"footer-oss-" + item.name}
-                    className="hover:text-black/90"
+                    className="flex space-x-1 hover:text-black/90 external-link"
                   >
-                    {item.name}
+                    <span>{item.name}</span>
+                    <HiArrowUpRight className="w-3 h-3" />
                   </a>
                 </li>
               ))}
             </ul>
 
             <h3 className="tracking-wide font-semibold pt-2">APIs</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {apis.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
                     target="_blank"
                     data-umami-event={"footer-api-" + item.name}
-                    className="hover:text-black/90"
+                    className="flex space-x-1 hover:text-black/90 external-link"
                   >
-                    {item.name}
+                    <span>{item.name}</span>
+                    <HiArrowUpRight className="w-3 h-3" />
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="space-y-3">
+          <div className="space-y-4">
             <h3 className="tracking-wide font-semibold">Become A Sponsor</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {donate.map((item) => (
                 <li key={item.name}>
                   <a
@@ -167,17 +171,18 @@ export function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     data-umami-event={"footer-donate-" + item.name}
-                    className="hover:text-black/90"
+                    className="flex space-x-1 hover:text-black/90 external-link"
                   >
-                    {item.name}
+                    <span>{item.name}</span>
+                    <HiArrowUpRight className="w-3 h-3" />
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="space-y-3">
+          <div className="space-y-4">
             <h3 className="tracking-wide font-semibold">Sitemap</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {sitemap.map((item) => (
                 <li key={item.name}>
                   <Link
