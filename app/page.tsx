@@ -7,7 +7,7 @@ import { Coupons } from "./components/Coupons";
 export default function Index() {
   return (
     <>
-      <article className="prose prose-a:no-underline mx-auto pt-8 p-6 lg:px-8">
+      <article className="prose mx-auto pt-8 p-6 lg:px-8">
         <h1 className="text-xl font-bold text-black/90">Hey, I'm Frans 👋</h1>
         <p className="mt-4 leading-8">
           I am an independent software developer who loves to build things that

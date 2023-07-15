@@ -10,6 +10,7 @@ import { HiOutlineBars3, HiXMark } from "react-icons/hi2";
 
 import { Logo } from "./Logo";
 import { DashboardNav } from "./DashboardNav";
+import { NavLink } from "./NavLink";
 
 const navigation = [
   { name: "About", href: "/about" },
@@ -30,7 +31,7 @@ export function Header() {
   const { status } = useSession();
 
   return (
-    <header className="bg-white shadow fixed w-full z-50">
+    <header className="bg-white/80 backdrop-saturate-50 backdrop-blur border-b border-gray-200/80 fixed w-full z-10">
       <nav
         className="mx-auto flex items-center justify-between max-w-7xl p-4 lg:px-8"
         aria-label="Global"
@@ -43,13 +44,14 @@ export function Header() {
           </Link>
           <div className="hidden lg:flex lg:gap-x-6">
             {navigation.map((item) => (
-              <Link
+              <NavLink
                 key={item.name}
                 href={item.href}
-                className="text-sm leading-6 hover:text-black/90 transition"
+                className="text-sm leading-6 hover:text-black/90 active:text-black/90 transition"
+                activeClassName="text-black/90"
               >
                 {item.name}
-              </Link>
+              </NavLink>
             ))}
           </div>
         </div>
@@ -73,8 +75,7 @@ export function Header() {
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link href="/" onClick={() => setMobileMenuOpen(false)}>
               <Logo />

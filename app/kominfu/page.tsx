@@ -35,7 +35,7 @@ export default function Kominfu() {
 
   return (
     <article className="prose mx-auto pt-8 p-6 lg:px-8">
-      <h1 className="font-bold text-center text-black/90">{metadata.title}</h1>
+      <h1 className="font-bold text-center">{metadata.title}</h1>
       <p className="text-center">
         The Indonesian government plans to ban tech platforms including PayPal,
         Steam, Epic Games, and many others. This is the countdown.
@@ -87,7 +87,7 @@ export default function Kominfu() {
       </div>
 
       <div className="text-center">
-        <h2 className="text-5xl text-black/90">Time is up!</h2>
+        <h2 className="text-5xl">Time is up!</h2>
         <p>
           It has been{" "}
           <strong>

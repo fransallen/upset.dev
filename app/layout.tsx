@@ -58,11 +58,11 @@ export default function RootLayout({
           data-website-id="4c04bc0c-5aa4-4e22-a333-1976d594a9d0"
         ></script>
       </head>
-      <body className={inter.className + " text-black/80"}>
+      <body className={inter.className + " text-black/70"}>
         <Provider>
           <Header />
 
-          <main className="pt-28 pb-24">{children}</main>
+          <main className="pt-24 sm:pt-28 pb-20">{children}</main>
 
           <Footer />
         </Provider>

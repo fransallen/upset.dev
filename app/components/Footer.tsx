@@ -53,7 +53,7 @@ const sitemap = [
 export function Footer() {
   return (
     <footer
-      className="px-4 divide-y divide-slate-300 border-t"
+      className="px-4 divide-y divide-slate-300 border-t border-gray-200/80"
       style={{ backgroundColor: "#f5f5f5" }}
     >
       <div className="flex flex-col justify-between py-10 mx-auto space-y-16 lg:flex-row lg:space-y-0 max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -207,7 +207,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="py-6 text-sm text-center text-black/70 space-y-2">
+      <div className="py-6 text-sm text-center text-black/60 space-y-2">
         <div>
           All rights reserved &copy; {new Date().getFullYear()}{" "}
           <Link href="/">Frans Allen</Link>
