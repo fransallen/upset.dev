@@ -51,7 +51,10 @@ const sitemap = [
 
 export function Footer() {
   return (
-    <footer className="mt-16 md:mt-24 px-4 divide-y divide-slate-300 border-t border-t-slate-300">
+    <footer
+      className="px-4 divide-y divide-slate-300 border-t"
+      style={{ backgroundColor: "#f5f5f5" }}
+    >
       <div className="flex flex-col justify-between py-10 mx-auto space-y-16 lg:flex-row lg:space-y-0 max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="lg:w-2/6">
           <div className="text-sm text-center lg:text-left">
@@ -199,14 +202,14 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="py-6 text-sm text-center text-slate-500 space-y-2">
+      <div className="py-6 text-sm text-center text-black/70 space-y-2">
         <div>
           All rights reserved &copy; {new Date().getFullYear()}{" "}
           <Link href="/">Frans Allen</Link>
         </div>
         <div>
           <a
-            className="block text-xs"
+            className="inline-block text-xs"
             href="https://github.com/fransallen/upset.dev"
             target="_blank"
           >

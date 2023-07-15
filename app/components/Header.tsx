@@ -30,9 +30,9 @@ export function Header() {
   const { status } = useSession();
 
   return (
-    <header className="bg-white">
+    <header className="bg-white shadow fixed w-full z-50">
       <nav
-        className="mx-auto flex items-center justify-between max-w-7xl p-6 lg:px-8"
+        className="mx-auto flex items-center justify-between max-w-7xl p-4 lg:px-8"
         aria-label="Global"
       >
         <div className="flex items-center gap-x-12">

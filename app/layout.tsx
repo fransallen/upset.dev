@@ -62,7 +62,7 @@ export default function RootLayout({
         <Provider>
           <Header />
 
-          <main>{children}</main>
+          <main className="pt-28 pb-24">{children}</main>
 
           <Footer />
         </Provider>
