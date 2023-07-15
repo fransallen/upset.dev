@@ -117,7 +117,7 @@ export function Footer() {
                     href={item.href}
                     target={item.blank ? "_blank" : "_self"}
                     data-umami-event={"footer-project-" + item.name}
-                    className="flex space-x-1 hover:text-black/90 external-link"
+                    className="inline-flex space-x-1 hover:text-black/90 external-link"
                   >
                     <span>{item.name}</span>
                     {item.blank ? <HiArrowUpRight className="w-3 h-3" /> : ""}
@@ -135,7 +135,7 @@ export function Footer() {
                     href={item.href}
                     target="_blank"
                     data-umami-event={"footer-oss-" + item.name}
-                    className="flex space-x-1 hover:text-black/90 external-link"
+                    className="inline-flex space-x-1 hover:text-black/90 external-link"
                   >
                     <span>{item.name}</span>
                     <HiArrowUpRight className="w-3 h-3" />
@@ -152,7 +152,7 @@ export function Footer() {
                     href={item.href}
                     target="_blank"
                     data-umami-event={"footer-api-" + item.name}
-                    className="flex space-x-1 hover:text-black/90 external-link"
+                    className="inline-flex space-x-1 hover:text-black/90 external-link"
                   >
                     <span>{item.name}</span>
                     <HiArrowUpRight className="w-3 h-3" />
@@ -171,7 +171,7 @@ export function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     data-umami-event={"footer-donate-" + item.name}
-                    className="flex space-x-1 hover:text-black/90 external-link"
+                    className="inline-flex space-x-1 hover:text-black/90 external-link"
                   >
                     <span>{item.name}</span>
                     <HiArrowUpRight className="w-3 h-3" />
