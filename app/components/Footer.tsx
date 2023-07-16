@@ -24,6 +24,10 @@ const projects = [
 
 const oss = [
   { name: "Indiwtf CLI", href: "https://github.com/fransallen/indiwtf-cli" },
+  {
+    name: "Indiwtf Telegram Bot",
+    href: "https://github.com/fransallen/indiwtf-telegram-bot",
+  },
   { name: "EasyRPZ", href: "https://github.com/pure-dns/easyrpz" },
   { name: "Screenshot", href: "https://github.com/staticallyio/screenshot" },
   { name: "PureDNS Filters", href: "https://github.com/pure-dns/filters" },
