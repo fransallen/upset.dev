@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const coupons = [
   {
@@ -22,7 +21,7 @@ export function Coupons() {
       <h2 className="text-2xl font-bold text-black/90">Coupons</h2>
       <div className="mt-4">
         {coupons.map((item) => (
-          <Link
+          <a
             key={item.name}
             href={item.href}
             rel="noopener noreferrer nofollow"
@@ -41,7 +40,7 @@ export function Coupons() {
               <h5 className="font-semibold">{item.name}</h5>
               <p>{item.info}</p>
             </div>
-          </Link>
+          </a>
         ))}
       </div>
     </section>
