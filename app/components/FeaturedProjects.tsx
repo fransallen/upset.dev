@@ -122,7 +122,7 @@ export function FeaturedProjects() {
             key={item.name}
             href={item.href}
             target="_blank"
-            data-umami-event={"featuredProject-" + item.name}
+            data-umami-event={"featured-project-" + item.name}
             className="rounded-lg shadow bg-white cursor-pointer overflow-hidden transition-all duration-200 group hover:shadow-md relative"
           >
             {item.new ? (
