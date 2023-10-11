@@ -52,6 +52,8 @@ const sitemap = [
   { name: "Press", href: "/#press" },
   { name: "Hardware", href: "/hardware" },
   { name: "Contact", href: "/contact" },
+  { name: "Privacy", href: "/privacy" },
+  { name: "Terms", href: "/terms" },
 ];
 
 export function Footer() {
