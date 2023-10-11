@@ -86,6 +86,11 @@ const nextConfig = {
         destination: "https://www.vultr.com/?ref=9228062-8H",
         permanent: false,
       },
+      {
+        source: "/l/dewaweb",
+        destination: "https://www.dewaweb.com/aff.php?aff=26349",
+        permanent: false,
+      },
     ];
   },
 };
