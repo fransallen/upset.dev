@@ -34,6 +34,7 @@ export default function Index() {
           alt="Frans Allen's GitHub Chart"
           width={600}
           height={100}
+          loading="lazy"
           className="mx-auto mt-8"
         />
       </section>
