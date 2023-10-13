@@ -4,7 +4,12 @@ export const runtime = "edge";
 
 export async function GET(req: NextRequest, res: NextResponse) {
   try {
-    const { searchParams } = new URL(req.url as string);
+    const decodedURL = decodeURIComponent(req.url as string).replace(
+      /&amp;/g,
+      "&",
+    );
+
+    const { searchParams } = new URL(decodedURL);
 
     const title = searchParams.has("title")
       ? searchParams.get("title")?.slice(0, 100)
