@@ -101,7 +101,7 @@ const otherProjects = [
   {
     name: "Facemash Clone",
     info: "A clone of Facemash website from The Social Network movie.",
-    href: "https://facemash.upset.dev",
+    href: "https://facemash-clone.fly.dev",
     blank: true,
   },
   {
