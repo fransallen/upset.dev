@@ -236,7 +236,7 @@ export default function Kominfu() {
       <h2>My website is blocked in Indonesia, how do I unblock it?</h2>
       <p>
         First, check whether your site is really blocked in Indonesia using{" "}
-        <a href="https://indiwtf.upset.dev" target="_blank">
+        <a href="https://indiwtf.com" target="_blank">
           Indiwtf
         </a>
         . Indiwtf is a tool I developed specifically for checking whether a

@@ -59,7 +59,7 @@ const projects = [
   {
     name: "Indiwtf",
     info: "Online tool to check if your website is blocked in Indonesia.",
-    href: "https://indiwtf.upset.dev",
+    href: "https://indiwtf.com",
     bg: "#bfdcff",
     new: false,
     builtWith: [

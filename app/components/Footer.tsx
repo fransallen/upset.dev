@@ -16,9 +16,13 @@ const projects = [
   { name: "BlobCDN", href: "https://blobcdn.com", blank: true },
   { name: "Fonts", href: "https://fonts.upset.dev", blank: true },
   { name: "HTTP Check", href: "https://httpcheck.upset.dev", blank: true },
-  { name: "Indiwtf", href: "https://indiwtf.upset.dev", blank: true },
+  { name: "Indiwtf", href: "https://indiwtf.com", blank: true },
   { name: "thedev.id", href: "https://thedev.id", blank: true },
-  { name: "Facemash Clone", href: "https://facemash.upset.dev", blank: true },
+  {
+    name: "Facemash Clone",
+    href: "https://facemash-clone.fly.dev",
+    blank: true,
+  },
   { name: "Kominfu", href: "/kominfu", blank: false },
 ];
 
@@ -37,7 +41,7 @@ const oss = [
   },
 ];
 
-const apis = [{ name: "Indiwtf API", href: "https://indiwtf.upset.dev/api" }];
+const apis = [{ name: "Indiwtf API", href: "https://indiwtf.com/api" }];
 
 const donate = [
   { name: "GitHub Sponsors", href: "https://github.com/sponsors/fransallen" },
