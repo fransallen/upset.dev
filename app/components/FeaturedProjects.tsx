@@ -9,6 +9,10 @@ const projects = [
     bg: "#ffcbcb",
     new: false,
     builtWith: [
+      {
+        name: "Go",
+        class: "bg-blue-100 text-blue-800",
+      },
       { name: "Node.js", class: "bg-green-100 text-green-800" },
       {
         name: "libvips",
@@ -23,11 +27,11 @@ const projects = [
     bg: "#ffeebf",
     new: false,
     builtWith: [
-      { name: "C++", class: "bg-gray-100" },
       {
         name: "Go",
         class: "bg-blue-100 text-blue-800",
       },
+      { name: "C++", class: "bg-gray-100" },
       {
         name: "Lua",
         class: "bg-indigo-100 text-indigo-800",
@@ -41,6 +45,10 @@ const projects = [
     bg: "#bffff9",
     new: true,
     builtWith: [
+      {
+        name: "Go",
+        class: "bg-blue-100 text-blue-800",
+      },
       { name: "JavaScript", class: "bg-gray-100" },
       {
         name: "Workers",
@@ -66,6 +74,14 @@ const projects = [
       {
         name: "Go",
         class: "bg-blue-100 text-blue-800",
+      },
+      {
+        name: "Redis",
+        class: "bg-rose-100 text-rose-800",
+      },
+      {
+        name: "Postgres",
+        class: "bg-sky-100 text-sky-800",
       },
     ],
   },
