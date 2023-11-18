@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const title = "fonts.upset.dev: A privacy-friendly Google Fonts alternative";
 const description =
-  "Learn about Frans Allen's background, expertise, and contributions, providing valuable insights and solutions.";
+  "fonts.upset.dev is a free, fast and privacy-friendly Google Fonts alternative.";
 
 const cssGoogleFonts = `@font-face {
   font-family: 'Inter';
