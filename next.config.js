@@ -42,11 +42,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/fonts",
-        destination: "https://fonts.upset.dev",
-        permanent: true,
-      },
-      {
         source: "/httpcheck",
         destination: "https://httpcheck.upset.dev",
         permanent: true,

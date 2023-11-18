@@ -87,8 +87,8 @@ const projects = [
   },
   {
     name: "Fonts",
-    info: "Simple and privacy-friendly Google Fonts proxy.",
-    href: "https://fonts.upset.dev",
+    info: "A privacy-friendly Google Fonts alternative.",
+    href: "/fonts",
     bg: "#f2bfff",
     new: false,
     builtWith: [
@@ -137,7 +137,6 @@ export function FeaturedProjects() {
           <Link
             key={item.name}
             href={item.href}
-            target="_blank"
             data-umami-event={"featured-project-" + item.name}
             className="rounded-lg shadow bg-white cursor-pointer overflow-hidden transition-all duration-200 group hover:shadow-md relative"
           >

@@ -14,7 +14,7 @@ const projects = [
   { name: "PureDNS", href: "https://puredns.org", blank: true },
   { name: "Favicone", href: "https://favicone.com", blank: true },
   { name: "BlobCDN", href: "https://blobcdn.com", blank: true },
-  { name: "Fonts", href: "https://fonts.upset.dev", blank: true },
+  { name: "Fonts", href: "/fonts", blank: false },
   { name: "HTTP Check", href: "https://httpcheck.upset.dev", blank: true },
   { name: "Indiwtf", href: "https://indiwtf.com", blank: true },
   { name: "thedev.id", href: "https://thedev.id", blank: true },
