@@ -1,4 +1,5 @@
 import { ImageResponse, NextRequest, NextResponse } from "next/server";
+import getFonts from "@/app/utils/getFonts";
 
 export const runtime = "edge";
 
@@ -17,6 +18,7 @@ function templateIndiwtf(title: string | undefined, page: string) {
           "radial-gradient(circle at 25px 25px, lightgray 2%, transparent 0%), radial-gradient(circle at 75px 75px, lightgray 2%, transparent 0%)",
         backgroundSize: "100px 100px",
         padding: "0 120px",
+        fontFamily: "Ubuntu",
       }}
     >
       <div tw="flex">
@@ -33,12 +35,14 @@ function templateIndiwtf(title: string | undefined, page: string) {
         {titleText}
       </div>
       <div
-        tw="text-black/80 mt-8"
+        tw="flex text-black/80 mt-8"
         style={{
+          fontFamily: "Roboto Mono",
           fontSize: 25,
         }}
       >
-        {url}
+        <span tw="mr-2">🔗</span>
+        <span>{url}</span>
       </div>
     </div>
   );
@@ -53,6 +57,7 @@ function templateDefault(title: string | undefined, logo: string) {
         backgroundImage:
           "radial-gradient(circle at 25px 25px, lightgray 2%, transparent 0%), radial-gradient(circle at 75px 75px, lightgray 2%, transparent 0%)",
         backgroundSize: "100px 100px",
+        fontFamily: "Inter",
       }}
     >
       <div
@@ -120,6 +125,8 @@ export async function GET(req: NextRequest, res: NextResponse) {
     return new ImageResponse(templateHtml, {
       width: 1200,
       height: 630,
+      emoji: "twemoji",
+      fonts: await getFonts(),
     });
   } catch (e: any) {
     console.log(`${e.message}`);
