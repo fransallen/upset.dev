@@ -2,7 +2,7 @@ import { ImageResponse, NextRequest, NextResponse } from "next/server";
 
 export const runtime = "edge";
 
-export function templateIndiwtf(title: string | undefined, page: string) {
+function templateIndiwtf(title: string | undefined, page: string) {
   const logo = "https://indiwtf.com/img/logo.svg";
   const titleText = title
     ? title
@@ -44,7 +44,7 @@ export function templateIndiwtf(title: string | undefined, page: string) {
   );
 }
 
-export function templateDefault(title: string | undefined, logo: string) {
+function templateDefault(title: string | undefined, logo: string) {
   const titleText = title ? title : "Generate OG image via URL";
   return (
     <div
