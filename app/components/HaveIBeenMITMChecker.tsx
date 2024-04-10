@@ -24,8 +24,7 @@ export function HaveIBeenMITMChecker() {
         setDiagnosticResult("Your internet is being intercepted");
       }
     } catch (error) {
-      setDiagnosticResult("Error occurred during the diagnostic");
-      console.error("Diagnostic error:", error);
+      setDiagnosticResult("Your internet is being intercepted");
     } finally {
       setLoading(false);
     }
