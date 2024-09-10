@@ -73,12 +73,12 @@ const nextConfig = {
       },
       {
         source: "/l/digitalocean",
-        destination: "https://m.do.co/c/c57487ec51ca",
+        destination: "https://m.do.co/c/a31f3f20587e",
         permanent: false,
       },
       {
         source: "/l/vultr",
-        destination: "https://www.vultr.com/?ref=9228062-8H",
+        destination: "https://www.vultr.com/?ref=9652667-9J",
         permanent: false,
       },
       {
