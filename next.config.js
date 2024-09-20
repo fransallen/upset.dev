@@ -9,6 +9,30 @@ const nextConfig = {
       },
     ],
   },
+  async headers() {
+    return [
+      {
+        source: "/:slug",
+        headers: [
+          {
+            key: "Onion-Location",
+            value:
+              "http://upsetdevfm5twuhgwr2tmj6uy3h5byj3jagil4qqt73v5eis5fdgqbid.onion/:slug",
+          },
+        ],
+      },
+      {
+        source: "/",
+        headers: [
+          {
+            key: "Onion-Location",
+            value:
+              "http://upsetdevfm5twuhgwr2tmj6uy3h5byj3jagil4qqt73v5eis5fdgqbid.onion",
+          },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [
       {

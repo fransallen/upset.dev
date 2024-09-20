@@ -43,7 +43,7 @@ const projects = [
     info: "A user-friendly API to get favicons from any website.",
     href: "https://favicone.com",
     bg: "#bffff9",
-    new: true,
+    new: false,
     builtWith: [
       {
         name: "Go",
