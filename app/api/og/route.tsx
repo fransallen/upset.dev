@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import type { NextRequest, NextResponse } from "next/server";
 import { ImageResponse } from "next/og";
 import getFonts from "@/app/utils/getFonts";
 
