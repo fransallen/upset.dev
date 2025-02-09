@@ -1,6 +1,6 @@
-import { HaveIBeenMITMChecker } from "../components/HaveIBeenMITMChecker";
+import { HaveIBeenMITMChecker } from "../components/HaveIBeenMITMed";
 
-const title = "Have I Been MITM?";
+const title = "Have I Been MITMed?";
 const description = "Check whether your internet is intercepted or not.";
 
 export const metadata = {
@@ -20,9 +20,14 @@ export const metadata = {
 export default function HaveIBeenMITM() {
   return (
     <article className="prose mx-auto pt-8 p-6 lg:px-8">
-      <h1 className="font-bold text-center text-black/90">Have I Been MITM?</h1>
+      <div className="text-center">
+        <h1 className="font-bold text-black/90">Have I Been MITMed?</h1>
+        <p>Check whether your internet is intercepted or not.</p>
+      </div>
 
-      <HaveIBeenMITMChecker />
+      <div className="mt-16">
+        <HaveIBeenMITMChecker />
+      </div>
     </article>
   );
 }

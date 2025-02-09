@@ -37,7 +37,12 @@ const nextConfig = {
     return [
       {
         source: "/bio:r*",
-        destination: "/about",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/about",
+        destination: "/",
         permanent: true,
       },
       {

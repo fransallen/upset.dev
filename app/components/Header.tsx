@@ -3,32 +3,20 @@
 import Link from "next/link";
 import { useState } from "react";
 
-import { useSession, signOut } from "next-auth/react";
-
 import { Dialog } from "@headlessui/react";
 import { HiOutlineBars3, HiXMark } from "react-icons/hi2";
 
 import { Logo } from "./Logo";
-import { DashboardNav } from "./DashboardNav";
 import { NavLink } from "./NavLink";
 
 const navigation = [
-  { name: "About", href: "/about" },
   { name: "Projects", href: "/#projects" },
   { name: "Press", href: "/#press" },
   { name: "Contact", href: "/contact" },
 ];
 
-const loggedInMenu = [
-  {
-    name: "Your profile",
-    href: "/me",
-  },
-];
-
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { status } = useSession();
 
   return (
     <header className="bg-white/80 backdrop-saturate-50 backdrop-blur border-b border-gray-200/80 fixed w-full z-10">
@@ -66,7 +54,12 @@ export function Header() {
           </button>
         </div>
         <div className="hidden lg:flex">
-          <DashboardNav />
+          <a
+            className="border rounded-xl px-3 py-2 block text-sm leading-6 text-black/90 hover:bg-gray-50"
+            href="https://indiwtf.com/?ref=upset.dev"
+          >
+            Try Indiwtf
+          </a>
         </div>
       </nav>
       <Dialog
@@ -104,35 +97,12 @@ export function Header() {
                 ))}
               </div>
               <div className="py-6">
-                {status === "authenticated" ? (
-                  <div className="space-y-2">
-                    {loggedInMenu.map((item) => (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black/90-900 hover:bg-gray-50"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-                    <button
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black/90-900 hover:bg-gray-50"
-                      type="button"
-                      onClick={() => signOut()}
-                    >
-                      Sign out
-                    </button>
-                  </div>
-                ) : (
-                  <Link
-                    href="/login"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black/90-900 hover:bg-gray-50"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Sign in
-                  </Link>
-                )}
+                <a
+                  href="https://indiwtf.com/?ref=upset.dev"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black/90-900 hover:bg-gray-50"
+                >
+                  Try Indiwtf
+                </a>
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@ const projects = [
     name: "Statically",
     info: "Statically is a CDN for static files on GitHub, GitLab, and Bitbucket.",
     href: "https://statically.io",
-    bg: "#ffcbcb",
+    bg: "#fff",
     new: false,
     builtWith: [
       {
@@ -24,7 +24,7 @@ const projects = [
     name: "PureDNS",
     info: "Public DNS service that supports DNS over HTTPS, TLS, QUIC, Tor.",
     href: "https://puredns.org",
-    bg: "#ffeebf",
+    bg: "#fff",
     new: false,
     builtWith: [
       {
@@ -42,7 +42,7 @@ const projects = [
     name: "Favicone",
     info: "A user-friendly API to get favicons from any website.",
     href: "https://favicone.com",
-    bg: "#bffff9",
+    bg: "#fff",
     new: false,
     builtWith: [
       {
@@ -60,7 +60,7 @@ const projects = [
     name: "BlobCDN",
     info: "A service for generating SVG shapes via URL.",
     href: "https://blobcdn.com",
-    bg: "#ffcbe8",
+    bg: "#fff",
     new: false,
     builtWith: [{ name: "Node.js", class: "bg-green-100 text-green-800" }],
   },
@@ -68,7 +68,7 @@ const projects = [
     name: "Indiwtf",
     info: "Online tool to check if your website is blocked in Indonesia.",
     href: "https://indiwtf.com",
-    bg: "#bfdcff",
+    bg: "#fff",
     new: false,
     builtWith: [
       {
@@ -89,7 +89,7 @@ const projects = [
     name: "Fonts",
     info: "A privacy-friendly Google Fonts alternative.",
     href: "/fonts",
-    bg: "#f2bfff",
+    bg: "#fff",
     new: false,
     builtWith: [
       { name: "JavaScript", class: "bg-gray-100" },
@@ -102,6 +102,12 @@ const projects = [
 ];
 
 const otherProjects = [
+  {
+    name: "Have I Been MITMed?",
+    info: "Internet connection checker to detect interception by the Indonesian government or ISP.",
+    href: "/haveibeenmitmed",
+    blank: false,
+  },
   {
     name: "HTTP Check",
     info: "A tool for verifying whether a website has HTTP/2 & HTTP/3 enabled.",
@@ -130,15 +136,14 @@ const otherProjects = [
 
 export function FeaturedProjects() {
   return (
-    <section id="projects" className="max-w-4xl mx-auto p-6 lg:pt-10 lg:px-8">
-      <h2 className="text-2xl font-bold text-center text-black/90">Projects</h2>
+    <section id="projects" className="max-w-4xl mx-auto p-6 lg:px-8">
       <div className="grid grid-flow-row-dense grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 mt-8">
         {projects.map((item) => (
           <Link
             key={item.name}
             href={item.href}
             data-umami-event={"featured-project-" + item.name}
-            className="rounded-lg shadow bg-white cursor-pointer overflow-hidden transition-all duration-200 group hover:shadow-md relative"
+            className="rounded-lg bg-white cursor-pointer overflow-hidden transition-all duration-200 group hover:shadow relative border"
           >
             {item.new ? (
               <div className="absolute bg-red-500 rounded px-2 py-1 text-white text-xs right-0">
@@ -148,7 +153,7 @@ export function FeaturedProjects() {
               ""
             )}
             <div
-              className="h-32 w-full flex justify-center items-center transition-all duration-200"
+              className="h-32 w-full flex justify-center items-center transition-all duration-200 border-b"
               style={{ backgroundColor: item.bg }}
             >
               <Image
@@ -184,7 +189,7 @@ export function FeaturedProjects() {
 
       <div
         id="other-projects"
-        className="mt-4 max-w-xl mx-auto rounded-lg border"
+        className="mt-8 max-w-xl mx-auto rounded-lg border"
       >
         {otherProjects.map((item) => (
           <Link

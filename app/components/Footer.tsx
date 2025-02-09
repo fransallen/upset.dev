@@ -51,10 +51,8 @@ const donate = [
 ];
 
 const sitemap = [
-  { name: "About", href: "/about" },
   { name: "Projects", href: "/#projects" },
   { name: "Press", href: "/#press" },
-  { name: "Hardware", href: "/hardware" },
   { name: "Contact", href: "/contact" },
   { name: "Privacy", href: "/privacy" },
   { name: "Terms", href: "/terms" },

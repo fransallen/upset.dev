@@ -1,5 +1,3 @@
-import Provider from "./components/Provider";
-
 import { Metadata } from "next";
 
 import { Header } from "./components/Header";
@@ -59,13 +57,11 @@ export default function RootLayout({
         ></script>
       </head>
       <body className={inter.className + " text-black/70"}>
-        <Provider>
-          <Header />
+        <Header />
 
-          <main className="pt-24 sm:pt-28 pb-20">{children}</main>
+        <main className="pt-20 pb-16">{children}</main>
 
-          <Footer />
-        </Provider>
+        <Footer />
       </body>
     </html>
   );
