@@ -1,8 +1,8 @@
-import type { NextRequest, NextResponse } from "next/server";
+export const runtime = "edge";
+
+import type { NextRequest } from "next/server";
 import { ImageResponse } from "next/og";
 import getFonts from "@/app/utils/getFonts";
-
-export const runtime = "edge";
 
 function templateIndiwtf(title: string | undefined, page: string) {
   const logo = "https://indiwtf.com/img/logo.svg";
@@ -88,7 +88,7 @@ function templateDefault(title: string | undefined, logo: string) {
   );
 }
 
-export async function GET(req: NextRequest, res: NextResponse) {
+export async function GET(req: NextRequest) {
   try {
     const decodedURL = decodeURIComponent(req.url as string).replace(
       /&amp;/g,
