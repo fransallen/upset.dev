@@ -52,7 +52,7 @@ export default function RootLayout({
       <head>
         <script
           async
-          src="https://api-stack.vercel.app/app"
+          src="https://api-scout.reflexapi.net/app"
           data-website-id="4c04bc0c-5aa4-4e22-a333-1976d594a9d0"
         ></script>
       </head>
