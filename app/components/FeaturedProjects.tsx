@@ -111,8 +111,8 @@ const otherProjects = [
   {
     name: "HTTP Check",
     info: "A tool for verifying whether a website has HTTP/2 & HTTP/3 enabled.",
-    href: "https://httpcheck.upset.dev",
-    blank: true,
+    href: "https://upset.dev/httpcheck",
+    blank: false,
   },
   {
     name: "thedev.id",
@@ -123,8 +123,8 @@ const otherProjects = [
   {
     name: "Facemash Clone",
     info: "A clone of Facemash website from The Social Network movie.",
-    href: "https://facemash-clone.fly.dev",
-    blank: true,
+    href: "/facemash",
+    blank: false,
   },
   {
     name: "Kominfu",
@@ -170,7 +170,7 @@ export function FeaturedProjects() {
                 </h3>
               </div>
               <div className="mt-3 text-sm">{item.info}</div>
-              <div className="mt-2">
+              <div key={item.name} className="mt-2">
                 {item.builtWith.map((tool) => (
                   <span
                     className={
