@@ -98,14 +98,12 @@ const nextConfig = {
     ];
   },
   async rewrites() {
-    {
-      return [
-        {
-          source: "/facemash:path*",
-          destination: "https://facemash-clone.fly.dev:path*",
-        },
-      ];
-    }
+    return [
+      {
+        source: "/facemash:path*",
+        destination: "https://facemash-clone.fly.dev:path*",
+      },
+    ];
   },
 };
 
