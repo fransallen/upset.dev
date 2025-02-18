@@ -81,11 +81,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/facemash",
-        destination: "https://facemash.upset.dev",
-        permanent: true,
-      },
-      {
         source: "/indiwtf-cli",
         destination: "https://github.com/fransallen/indiwtf-cli",
         permanent: true,
