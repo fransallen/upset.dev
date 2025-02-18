@@ -71,11 +71,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/httpcheck",
-        destination: "https://httpcheck.upset.dev",
-        permanent: true,
-      },
-      {
         source: "/thedevid",
         destination: "https://thedev.id",
         permanent: true,
