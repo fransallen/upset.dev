@@ -100,8 +100,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/facemash:path*",
-        destination: "https://facemash-clone.fly.dev:path*",
+        source: "/facemash/:path*",
+        destination: "https://facemash-clone.fly.dev/:path*",
       },
     ];
   },
