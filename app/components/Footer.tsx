@@ -15,13 +15,13 @@ const projects = [
   { name: "Favicone", href: "https://favicone.com", blank: true },
   { name: "BlobCDN", href: "https://blobcdn.com", blank: true },
   { name: "Fonts", href: "/fonts", blank: false },
-  { name: "HTTP Check", href: "https://httpcheck.upset.dev", blank: true },
+  { name: "HTTP Check", href: "/httpcheck", blank: false },
   { name: "Indiwtf", href: "https://indiwtf.com", blank: true },
   { name: "thedev.id", href: "https://thedev.id", blank: true },
   {
     name: "Facemash Clone",
-    href: "https://facemash-clone.fly.dev",
-    blank: true,
+    href: "/facemash",
+    blank: false,
   },
   { name: "Kominfu", href: "/kominfu", blank: false },
 ];
