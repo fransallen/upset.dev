@@ -136,73 +136,81 @@ const otherProjects = [
 
 export function FeaturedProjects() {
   return (
-    <section id="projects" className="max-w-4xl mx-auto p-6 lg:px-8">
-      <div className="grid grid-flow-row-dense grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 mt-8">
-        {projects.map((item) => (
+    <section id="projects" className="container py-12">
+      <div className="mx-auto max-w-3xl text-center">
+        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          Featured Projects
+        </h2>
+        <p className="mt-4 text-muted-foreground">
+          A collection of tools and services I've built to solve various
+          problems.
+        </p>
+      </div>
+
+      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {projects.map((project) => (
           <Link
-            key={item.name}
-            href={item.href}
-            data-umami-event={"featured-project-" + item.name}
-            className="rounded-lg bg-white cursor-pointer overflow-hidden transition-all duration-200 group hover:shadow relative border"
+            key={project.name}
+            href={project.href}
+            data-umami-event={"featured-project-" + project.name}
+            className="project-card group relative overflow-hidden"
           >
-            {item.new ? (
-              <div className="absolute bg-red-500 rounded px-2 py-1 text-white text-xs right-0">
+            {project.new && (
+              <span className="absolute right-4 top-4 rounded-full bg-primary px-2 py-1 text-xs font-medium text-primary-foreground">
                 New
-              </div>
-            ) : (
-              ""
+              </span>
             )}
-            <div
-              className="h-32 w-full flex justify-center items-center transition-all duration-200 border-b"
-              style={{ backgroundColor: item.bg }}
-            >
+
+            <div className="project-card-icon">
               <Image
-                src={`/img/icon-${item.name.toLocaleLowerCase()}.svg`}
-                width={56}
-                height={56}
-                alt={item.name + "Logo"}
+                src={`/img/icon-${project.name.toLowerCase()}.svg`}
+                width={24}
+                height={24}
+                alt={`${project.name} logo`}
               />
             </div>
-            <div className="p-4">
-              <div className="flex items-center">
-                <h3 className="text-lg font-semibold text-black/90">
-                  {item.name}
-                </h3>
-              </div>
-              <div className="mt-3 text-sm">{item.info}</div>
-              <div key={item.name} className="mt-2">
-                {item.builtWith.map((tool) => (
-                  <span
-                    className={
-                      tool.class +
-                      " inline-flex items-center px-2 py-0.5 rounded text-xs font-medium leading-4 mr-2"
-                    }
-                  >
-                    {tool.name}
-                  </span>
-                ))}
-              </div>
+
+            <h3 className="mb-2 text-lg font-medium text-foreground">
+              {project.name}
+            </h3>
+            <p className="mb-4 text-sm text-muted-foreground">{project.info}</p>
+
+            <div className="flex flex-wrap gap-2">
+              {project.builtWith.map((tech) => (
+                <span
+                  key={tech.name}
+                  className={`${tech.class} inline-flex items-center rounded-full px-2 py-1 text-xs font-medium`}
+                >
+                  {tech.name}
+                </span>
+              ))}
             </div>
           </Link>
         ))}
       </div>
 
-      <div
-        id="other-projects"
-        className="mt-8 max-w-xl mx-auto rounded-lg border"
-      >
-        {otherProjects.map((item) => (
-          <Link
-            key={item.name}
-            href={item.href}
-            target={item.blank ? "_blank" : "_self"}
-            data-umami-event={"project-" + item.name}
-            className="block hover:bg-gray-100 py-4 px-6 transition-all duration-200"
-          >
-            <h3 className="font-semibold text-black/90">{item.name}</h3>
-            <p className="text-sm mt-1">{item.info}</p>
-          </Link>
-        ))}
+      <div className="mt-16">
+        <h3 className="mb-6 text-center text-xl font-medium text-foreground">
+          Other Projects
+        </h3>
+        <div className="mx-auto max-w-2xl overflow-hidden rounded-lg border">
+          {otherProjects.map((project, index) => (
+            <Link
+              key={project.name}
+              href={project.href}
+              target={project.blank ? "_blank" : "_self"}
+              data-umami-event={"project-" + project.name}
+              className={`block border-b p-4 transition-colors hover:bg-accent ${
+                index === otherProjects.length - 1 ? "border-b-0" : ""
+              }`}
+            >
+              <h4 className="font-medium text-foreground">{project.name}</h4>
+              <p className="mt-1 text-sm text-muted-foreground">
+                {project.info}
+              </p>
+            </Link>
+          ))}
+        </div>
       </div>
     </section>
   );

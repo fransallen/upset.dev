@@ -2,11 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-
 import { Dialog } from "@headlessui/react";
 import { HiOutlineBars3, HiXMark } from "react-icons/hi2";
-
-import { Logo } from "./Logo";
 import { NavLink } from "./NavLink";
 
 const navigation = [
@@ -19,63 +16,68 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white/80 backdrop-saturate-50 backdrop-blur border-b border-gray-200/80 fixed w-full z-10">
-      <nav
-        className="mx-auto flex items-center justify-between max-w-7xl p-4 lg:px-8"
-        aria-label="Global"
-      >
-        <div className="flex items-center gap-x-12">
-          <Link href="/">
-            <div className="font-bold text-2xl tracking-tighter text-black/90">
-              Frans Allen
-            </div>
+    <header className="fixed inset-x-0 top-0 z-10 border-b border-border/40 bg-background/80 backdrop-blur-md">
+      <div className="container flex h-16 items-center justify-between">
+        <div className="flex items-center gap-x-8">
+          <Link
+            href="/"
+            className="text-2xl font-semibold tracking-tight text-foreground"
+          >
+            Frans Allen
           </Link>
-          <div className="hidden lg:flex lg:gap-x-6">
+          <nav className="hidden gap-6 md:flex">
             {navigation.map((item) => (
               <NavLink
                 key={item.name}
                 href={item.href}
-                className="text-sm leading-6 hover:text-black/90 active:text-black/90 transition"
-                activeClassName="text-black/90"
+                className="nav-link text-sm font-medium"
+                activeClassName="active"
               >
                 {item.name}
               </NavLink>
             ))}
-          </div>
+          </nav>
         </div>
-        <div className="flex lg:hidden">
+
+        <div className="flex md:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black/90"
+            className="-m-2.5 rounded-md p-2.5 text-muted-foreground"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
             <HiOutlineBars3 className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex">
-          <a
-            className="border rounded-xl px-3 py-2 block text-sm leading-6 text-black/90 hover:bg-gray-50"
+
+        <div className="hidden md:block">
+          <Link
             href="https://indiwtf.com/?ref=upset.dev"
+            className="inline-flex h-9 items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground"
           >
             Try Indiwtf
-          </a>
+          </Link>
         </div>
-      </nav>
+      </div>
+
       <Dialog
         as="div"
-        className="lg:hidden"
+        className="md:hidden"
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-background px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-foreground/10">
           <div className="flex items-center justify-between">
-            <Link href="/" onClick={() => setMobileMenuOpen(false)}>
-              <Logo />
+            <Link
+              href="/"
+              className="text-2xl font-semibold tracking-tight text-foreground"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Frans Allen
             </Link>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-black/90"
+              className="-m-2.5 rounded-md p-2.5 text-muted-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -83,13 +85,13 @@ export function Header() {
             </button>
           </div>
           <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
+            <div className="-my-6 divide-y divide-border">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black/90-900 hover:bg-gray-50"
+                    className="block rounded-md px-3 py-2 text-base font-medium text-foreground hover:bg-accent"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
@@ -97,12 +99,13 @@ export function Header() {
                 ))}
               </div>
               <div className="py-6">
-                <a
+                <Link
                   href="https://indiwtf.com/?ref=upset.dev"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black/90-900 hover:bg-gray-50"
+                  className="block rounded-md px-3 py-2 text-base font-medium text-foreground hover:bg-accent"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Try Indiwtf
-                </a>
+                </Link>
               </div>
             </div>
           </div>

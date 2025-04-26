@@ -40,9 +40,17 @@ const press = [
 
 export function Press() {
   return (
-    <section id="press" className="pt-10 max-w-xl mx-auto px-6 lg:px-0">
-      <h2 className="text-2xl font-bold text-black/90">Press</h2>
-      <div className="mt-4">
+    <section id="press" className="container py-12">
+      <div className="mx-auto max-w-3xl text-center">
+        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          Press Coverage
+        </h2>
+        <p className="mt-4 text-muted-foreground">
+          Media mentions and articles featuring my work and projects.
+        </p>
+      </div>
+
+      <div className="mt-12 mx-auto max-w-2xl space-y-4">
         {press.map((item) => (
           <a
             key={item.name}
@@ -50,17 +58,22 @@ export function Press() {
             rel="noopener noreferrer"
             target="_blank"
             data-umami-event={"press-" + item.name}
-            className=" hover:bg-gray-100 py-4 px-6 -mx-6 transition-all duration-200 flex items-center space-x-4 rounded-lg"
+            className="flex items-center gap-4 rounded-lg border p-4 transition-colors hover:bg-accent"
           >
-            <Image
-              src={`/img/icon-${item.logo}.png`}
-              quality={100}
-              className="w-10 h-10"
-              width={52}
-              height={52}
-              alt={`Logo ${item.name}`}
-            />
-            <span>{item.name}</span>
+            <div className="flex-shrink-0">
+              <Image
+                src={`/img/icon-${item.logo}.png`}
+                quality={100}
+                className="h-10 w-10 rounded-full object-cover"
+                width={40}
+                height={40}
+                alt={`Logo ${item.logo}`}
+              />
+            </div>
+            <div>
+              <h3 className="font-medium text-foreground">{item.name}</h3>
+              <p className="text-xs text-muted-foreground">{item.logo}</p>
+            </div>
           </a>
         ))}
       </div>

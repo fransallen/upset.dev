@@ -1,4 +1,5 @@
-import { Metadata } from "next";
+import type React from "react";
+import type { Metadata } from "next";
 
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
@@ -8,22 +9,7 @@ import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
-  fallback: [
-    "ui-sans-serif",
-    "system-ui",
-    "-apple-system",
-    "BlinkMacSystemFont",
-    "Segoe UI",
-    "Roboto",
-    "Helvetica Neue",
-    "Arial",
-    "Noto Sans",
-    "sans-serif",
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Color Emoji",
-  ],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -48,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-full antialiased">
+    <html lang="en" className={`${inter.variable} h-full`}>
       <head>
         <script
           async
@@ -56,12 +42,12 @@ export default function RootLayout({
           data-website-id="4c04bc0c-5aa4-4e22-a333-1976d594a9d0"
         ></script>
       </head>
-      <body className={inter.className + " text-black/70"}>
-        <Header />
-
-        <main className="pt-20 pb-16">{children}</main>
-
-        <Footer />
+      <body className="min-h-screen font-sans antialiased">
+        <div className="flex min-h-screen flex-col">
+          <Header />
+          <main className="flex-1 pt-20 pb-16">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

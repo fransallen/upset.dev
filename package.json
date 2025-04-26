@@ -30,7 +30,8 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "zip": "rm ../upsetdev.zip && zip -r ../upsetdev.zip . -x \".git/*\" \".next/*\" \"node_modules/*\""
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9"

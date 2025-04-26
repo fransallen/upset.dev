@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 import {
   FaFacebookSquare,
   FaGithub,
@@ -18,11 +17,7 @@ const projects = [
   { name: "HTTP Check", href: "/httpcheck", blank: false },
   { name: "Indiwtf", href: "https://indiwtf.com", blank: true },
   { name: "thedev.id", href: "https://thedev.id", blank: true },
-  {
-    name: "Facemash Clone",
-    href: "/facemash",
-    blank: false,
-  },
+  { name: "Facemash Clone", href: "/facemash", blank: false },
   { name: "Kominfu", href: "/kominfu", blank: false },
 ];
 
@@ -60,171 +55,153 @@ const sitemap = [
 
 export function Footer() {
   return (
-    <footer
-      className="px-4 divide-y divide-slate-300 border-t border-gray-200/80"
-      style={{ backgroundColor: "#f5f5f5" }}
-    >
-      <div className="flex flex-col justify-between py-10 mx-auto space-y-16 lg:flex-row lg:space-y-0 max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="lg:w-2/6">
-          <div className="text-sm text-center lg:text-left">
-            <div className="font-bold text-2xl tracking-tighter text-black/90">
-              Frans Allen
-            </div>
-            <p>Founder. Engineer. Speaker.</p>
-            <div className="flex justify-center lg:justify-normal space-x-4 text-black/80 pt-6 text-xl">
-              <a
-                href="https://twitter.com/fransallen"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="flex items-center hover:text-black/90"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="https://github.com/fransallen"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="flex items-center hover:text-black/90"
-              >
-                <FaGithub />
-              </a>
-              <a
-                href="https://linkedin.com/in/fransallen"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="flex items-center hover:text-black/90"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="https://instagram.com/fransallen"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="flex items-center hover:text-black/90"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="https://facebook.com/frxallen"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="flex items-center hover:text-black/90"
-              >
-                <FaFacebookSquare />
-              </a>
+    <footer className="border-t border-border bg-secondary">
+      <div className="container py-12">
+        <div className="grid gap-8 lg:grid-cols-5">
+          <div className="lg:col-span-2">
+            <div className="space-y-4">
+              <h2 className="text-2xl font-semibold tracking-tight text-foreground">
+                Frans Allen
+              </h2>
+              <p className="text-muted-foreground">
+                Founder. Engineer. Speaker.
+              </p>
+              <div className="flex space-x-4">
+                <a
+                  href="https://twitter.com/fransallen"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="social-icon"
+                >
+                  <FaTwitter className="h-5 w-5" />
+                  <span className="sr-only">Twitter</span>
+                </a>
+                <a
+                  href="https://github.com/fransallen"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="social-icon"
+                >
+                  <FaGithub className="h-5 w-5" />
+                  <span className="sr-only">GitHub</span>
+                </a>
+                <a
+                  href="https://linkedin.com/in/fransallen"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="social-icon"
+                >
+                  <FaLinkedin className="h-5 w-5" />
+                  <span className="sr-only">LinkedIn</span>
+                </a>
+                <a
+                  href="https://instagram.com/fransallen"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="social-icon"
+                >
+                  <FaInstagram className="h-5 w-5" />
+                  <span className="sr-only">Instagram</span>
+                </a>
+                <a
+                  href="https://facebook.com/frxallen"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="social-icon"
+                >
+                  <FaFacebookSquare className="h-5 w-5" />
+                  <span className="sr-only">Facebook</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-5/6 sm:grid-cols-4">
-          <div className="space-y-4">
-            <h3 className="tracking-wide font-semibold">Projects</h3>
-            <ul className="space-y-3">
-              {projects.map((item) => (
+
+          <div>
+            <h3 className="footer-heading">Projects</h3>
+            <ul className="space-y-2">
+              {projects.slice(0, 6).map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
                     target={item.blank ? "_blank" : "_self"}
                     data-umami-event={"footer-project-" + item.name}
-                    className="inline-flex space-x-1 hover:text-black/90 external-link"
+                    className="footer-link inline-flex items-center gap-1 external-link"
                   >
                     <span>{item.name}</span>
-                    {item.blank ? <HiArrowUpRight className="w-3 h-3" /> : ""}
+                    {item.blank && <HiArrowUpRight className="h-3 w-3" />}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="space-y-4">
-            <h3 className="tracking-wide font-semibold">Open Source</h3>
-            <ul className="space-y-3">
-              {oss.map((item) => (
+
+          <div>
+            <h3 className="footer-heading">Open Source</h3>
+            <ul className="space-y-2">
+              {oss.slice(0, 4).map((item) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
                     target="_blank"
                     data-umami-event={"footer-oss-" + item.name}
-                    className="inline-flex space-x-1 hover:text-black/90 external-link"
+                    className="footer-link inline-flex items-center gap-1 external-link"
+                    rel="noreferrer"
                   >
                     <span>{item.name}</span>
-                    <HiArrowUpRight className="w-3 h-3" />
+                    <HiArrowUpRight className="h-3 w-3" />
                   </a>
                 </li>
               ))}
             </ul>
 
-            <h3 className="tracking-wide font-semibold pt-2">APIs</h3>
-            <ul className="space-y-3">
-              {apis.map((item) => (
-                <li key={item.name}>
-                  <Link
-                    href={item.href}
-                    target="_blank"
-                    data-umami-event={"footer-api-" + item.name}
-                    className="inline-flex space-x-1 hover:text-black/90 external-link"
-                  >
-                    <span>{item.name}</span>
-                    <HiArrowUpRight className="w-3 h-3" />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="space-y-4">
-            <h3 className="tracking-wide font-semibold">Become A Sponsor</h3>
-            <ul className="space-y-3">
-              {donate.map((item) => (
+            <h3 className="footer-heading mt-6">Become A Sponsor</h3>
+            <ul className="space-y-2">
+              {donate.slice(0, 2).map((item) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
                     data-umami-event={"footer-donate-" + item.name}
-                    className="inline-flex space-x-1 hover:text-black/90 external-link"
+                    className="footer-link inline-flex items-center gap-1 external-link"
                   >
                     <span>{item.name}</span>
-                    <HiArrowUpRight className="w-3 h-3" />
+                    <HiArrowUpRight className="h-3 w-3" />
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="space-y-4">
-            <h3 className="tracking-wide font-semibold">Sitemap</h3>
-            <ul className="space-y-3">
+
+          <div>
+            <h3 className="footer-heading">Sitemap</h3>
+            <ul className="space-y-2">
               {sitemap.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
                     data-umami-event={"footer-sitemap-" + item.name}
-                    className="hover:text-black/90"
+                    className="footer-link"
                   >
                     {item.name}
                   </Link>
                 </li>
               ))}
-              <li>
-                <a
-                  href="/sitemap.xml"
-                  data-umami-event="footer-sitemap-sitemap-xml"
-                  className="hover:text-black/90"
-                >
-                  Sitemap.xml
-                </a>
-              </li>
             </ul>
           </div>
         </div>
       </div>
-      <div className="py-6 text-sm text-center text-black/60 space-y-2">
-        <div>
-          All rights reserved &copy; {new Date().getFullYear()}{" "}
-          <Link href="/">Frans Allen</Link>
-        </div>
-        <div>
+
+      <div className="border-t border-border">
+        <div className="container flex flex-col items-center justify-between gap-4 py-6 md:h-16 md:flex-row md:py-0">
+          <p className="text-center text-sm text-muted-foreground">
+            &copy; {new Date().getFullYear()} Frans Allen. All rights reserved.
+          </p>
           <a
-            className="inline-block text-xs"
+            className="text-xs text-muted-foreground hover:text-foreground"
             href="https://github.com/fransallen/upset.dev"
             target="_blank"
+            rel="noreferrer"
           >
             Source Code
           </a>
